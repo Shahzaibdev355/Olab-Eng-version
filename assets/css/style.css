@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "BurgoyneInitials";
+    src: url("/assets/fonts/BurgoyneInitials.otf");
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.main-wrapper{
+   display: flex;
+   flex-direction: row;
+}
+
+
+
+.left-section{
+    width: 100%;
+    /* border: 3px solid green; */
+    padding-left: 60px;
+    /* background-color: black; */
+}
+
