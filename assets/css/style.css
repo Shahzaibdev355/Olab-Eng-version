@@ -68,10 +68,11 @@ body{
 
 .left-sec-row2-pillar1,
 .left-sec-row2-pillar2{
-    width: 10%; 
-    height: max-content; 
-    min-width: 10%; /* Prevents flex items from growing beyond their content */
-    -webkit-box-sizing: border-box; /* Safari specific */
+    width: initial; 
+    height: 85vh; 
+    /* min-width: 10%;  */
+    -webkit-box-sizing: border-box; 
+    /* border: 1px solid red; */
 }
 
 .left-sec-row3 {
@@ -113,3 +114,30 @@ body{
     height: max-content; 
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .left-sec-row2-pillar1 {
+    position: fixed;
+    z-index: 10;
+    width: initial;
+    height: 70vh;
+}
+
+.left-sec-row2-pillar2 {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    width: initial;
+    height: 70vh;
+} */
