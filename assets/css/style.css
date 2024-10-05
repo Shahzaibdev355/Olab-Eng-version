@@ -22,6 +22,7 @@ body{
     /* border: 3px solid green; */
     padding-left: 60px;
     /* background-color: black; */
+    overflow-y: hidden;
 }
 
 
@@ -31,31 +32,20 @@ body{
     display: flex;
     flex-direction: column;
     /* height: 100vh; */
+
+    /* border: 2px solid palevioletred; */
+
+
+
+    height: 100vh; 
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
 }
+
+
+
 
 .left-sec-row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: end;
-    margin-top: 8px;
-}
-
-.olab-title-img1 {
-    /* font-family: "BurgoyneInitials", sans-serif;
-    font-size: 3.7pc;
-    letter-spacing: 12px;
-    margin-bottom: 0px; */
-    width: 25%;
-}
-
-.olab-title-img2 {
-
-    width: 30%;
-}
-
-
-.left-sec-row2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,7 +54,57 @@ body{
     align-items: center;
 
     position: relative;
+
+    height: auto;
+    box-sizing: border-box;
+    
 }
+
+
+
+
+.left-sec-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    /* margin-top: 8px; */
+
+    width: 100%; 
+    
+    /* border: 2px solid red; */
+}
+
+
+
+
+
+
+
+.olab-title-img1 {
+    /* width: 25%; */
+    width: 100%;
+    max-width: 250px; 
+    /* Set a max width to prevent too large images */
+}
+
+.olab-title-img2 {
+
+    /* width: 30%; */
+    width: 100%;
+    max-width: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .left-sec-row2-pillar1,
 .left-sec-row2-pillar2{
@@ -110,7 +150,7 @@ body{
 @-moz-document url-prefix() {
     .left-sec-row2-pillar1,
 .left-sec-row2-pillar2{
-    width: 65%; 
+    width: 35%; 
     height: max-content; 
 }
 }
