@@ -7,6 +7,9 @@ const navItems = document.querySelectorAll("#dashboard2-navitem-hover");
 const dashboard2Column1 = document.querySelector("#mainpage-column1");
 const dashboard2Column2 = document.querySelector("#mainpage-column2");
 
+const mobileNavbarWidth = document.querySelector(".navlink-column1");
+// const testing = document.querySelector(".aside-nav-link ul li a")
+
 let dashboard2Togglebtn = document.getElementById("dashboard2-side-close-btn");
 let dashboard2SideBarClose = document.getElementById(
   "dashboard2-sidebar-close"
@@ -16,7 +19,6 @@ let dashboard2SideBarOpen = document.getElementById("dashboard2-sidebar-open");
 const dashboard2Text = document.querySelectorAll("#dasboard2-text");
 
 const dropdownToggleIcon = document.querySelector(".dropdown-icon");
-
 
 const testingLInk = document.querySelector("#dropdown-link-row");
 
@@ -33,8 +35,11 @@ function updateSidebarWidth(open) {
       // dashboard2Column2.style.width = "85%";
     } else {
       // For smaller screens
-      dashboard2Column1.style.width = "70%";
-      dashboard2Column2.style.width = "100%";
+      dashboard2Column1.style.width = "85%";
+      // testing.style.paddingLeft = '15px'
+      mobileNavbarWidth.style.width = "100%";
+
+      // dashboard2Column2.style.width = "100%";
     }
   } else {
     if (window.innerWidth > 1080) {
@@ -43,7 +48,9 @@ function updateSidebarWidth(open) {
     } else {
       // For smaller screens
       dashboard2Column1.style.width = "0%";
-      dashboard2Column2.style.width = "100%";
+      mobileNavbarWidth.style.width = "0%";
+
+      // dashboard2Column2.style.width = "100%";
     }
   }
 
@@ -51,55 +58,41 @@ function updateSidebarWidth(open) {
 }
 
 // Loop through each navItem and add event listeners
-navItems.forEach((navItem) => {
-  navItem.addEventListener("mouseenter", function () {
-    if (dashboard2Hidden) {
-      updateSidebarWidth(true);
 
-      // dashboard2Text.forEach((text) => {
-      //   text.classList.add("dasboard2-text-dblock");
-      //   text.classList.remove("dasboard2-text");
-      // });
+if (window.innerWidth > 1080) {
+  navItems.forEach((navItem) => {
+    navItem.addEventListener("mouseenter", function () {
+      if (dashboard2Hidden) {
+        updateSidebarWidth(true);
 
-      
-      testingLInk.classList.add("dropdown-link-row-expanded");
+        testingLInk.classList.add("dropdown-link-row-expanded");
 
-      dashboard2Text.forEach((text) => {
-        text.classList.add("expanded-sidebar-link");
-        // text.classList.remove("dasboard2-text");
-      });
+        dashboard2Text.forEach((text) => {
+          text.classList.add("expanded-sidebar-link");
+          // text.classList.remove("dasboard2-text");
+        });
 
-
-      dashboard2SideBarClose.style.display = "flex";
-      dashboard2SideBarOpen.style.display = "none";
-    }
-  });
-
-  // Update sidebar width when mouse leaves the sidebar area
-  dashboard2Column1.addEventListener("mouseleave", function () {
-    updateSidebarWidth(false);
-
-    // dashboard2Text.forEach((text) => {
-    //   text.classList.remove("dasboard2-text-dblock");
-    //   text.classList.add("dasboard2-text");
-    // });
-
-    testingLInk.classList.remove("dropdown-link-row-expanded");
-
-
-    dashboard2Text.forEach((text) => {
-      text.classList.remove("expanded-sidebar-link");
-      // text.classList.add("dasboard2-text");
+        dashboard2SideBarClose.style.display = "flex";
+        dashboard2SideBarOpen.style.display = "none";
+      }
     });
 
+    // Update sidebar width when mouse leaves the sidebar area
+    dashboard2Column1.addEventListener("mouseleave", function () {
+      updateSidebarWidth(false);
 
-    dashboard2SideBarClose.style.display = "none";
-    dashboard2SideBarOpen.style.display = "block";
+      testingLInk.classList.remove("dropdown-link-row-expanded");
+
+      dashboard2Text.forEach((text) => {
+        text.classList.remove("expanded-sidebar-link");
+        // text.classList.add("dasboard2-text");
+      });
+
+      dashboard2SideBarClose.style.display = "none";
+      dashboard2SideBarOpen.style.display = "block";
+    });
   });
-});
-
-
-
+}
 
 // Click event listener for toggle button
 dashboard2Togglebtn.addEventListener("click", () => {
@@ -112,13 +105,9 @@ dashboard2Togglebtn.addEventListener("click", () => {
 
     testingLInk.classList.remove("dropdown-link-row-expanded");
 
-
     dashboard2Text.forEach((text) => {
       text.classList.remove("expanded-sidebar-link");
     });
-
-
-
   } else {
     dashboard2SideBarClose.style.display = "flex";
     dashboard2SideBarOpen.style.display = "none";
@@ -130,9 +119,6 @@ dashboard2Togglebtn.addEventListener("click", () => {
     dashboard2Text.forEach((text) => {
       text.classList.add("expanded-sidebar-link");
     });
-
-
-    
   }
 });
 
@@ -152,15 +138,8 @@ $(document).ready(function () {
     $(".dropdown-content").slideUp("fast");
   });
 
-
-
   $(".sidebar-div").on("mouseleave", function () {
     console.log("leave");
     $(".dropdown-content").slideUp("fast");
   });
-
-
-
-
-
 });
