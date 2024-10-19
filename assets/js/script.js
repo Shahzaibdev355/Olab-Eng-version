@@ -16,11 +16,15 @@ let dashboard2SideBarClose = document.getElementById(
 );
 let dashboard2SideBarOpen = document.getElementById("dashboard2-sidebar-open");
 
+let mobileMenuDiv = document.querySelector(".dashboard2-menu-toggle-btn");
+
 const dashboard2Text = document.querySelectorAll("#dasboard2-text");
 
 const dropdownToggleIcon = document.querySelector(".dropdown-icon");
 
 const testingLInk = document.querySelector("#dropdown-link-row");
+
+const testClicking = document.querySelector("#testClick");
 
 dashboard2SideBarClose.style.display = "none";
 
@@ -96,8 +100,12 @@ if (window.innerWidth > 1080) {
 
 // Click event listener for toggle button
 dashboard2Togglebtn.addEventListener("click", () => {
+
+
   updateSidebarWidth(dashboard2Hidden);
   if (dashboard2Hidden) {
+    // mobileMenuDiv.style.display = "block";
+
     dashboard2SideBarClose.style.display = "none";
     dashboard2SideBarOpen.style.display = "block";
 
@@ -108,7 +116,15 @@ dashboard2Togglebtn.addEventListener("click", () => {
     dashboard2Text.forEach((text) => {
       text.classList.remove("expanded-sidebar-link");
     });
+
+    console.log("close");
   } else {
+
+    if (window.innerWidth < 768) {
+      mobileMenuDiv.style.display = "none";
+    }
+
+
     dashboard2SideBarClose.style.display = "flex";
     dashboard2SideBarOpen.style.display = "none";
 
@@ -119,8 +135,50 @@ dashboard2Togglebtn.addEventListener("click", () => {
     dashboard2Text.forEach((text) => {
       text.classList.add("expanded-sidebar-link");
     });
+
+    console.log("open");
   }
 });
+
+
+
+
+
+
+
+const Clicking = () => {
+  testClicking.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("clicked");
+
+    // Check if sidebar is open, and close it
+    if (!dashboard2Hidden) {
+
+      updateSidebarWidth(false); // Close the sidebar
+
+      // Add delay before setting the mobile menu display to 'block'
+      setTimeout(() => {
+        mobileMenuDiv.style.display = "block";
+        console.log("Mobile menu displayed with delay");
+      }, 1500); // Adjust delay as needed (300ms)
+
+
+      dashboard2SideBarClose.style.display = "none";
+      dashboard2SideBarOpen.style.display = "block";
+
+      // Remove expanded class from the dropdown links
+      testingLInk.classList.remove("dropdown-link-row-expanded");
+
+      dashboard2Text.forEach((text) => {
+        text.classList.remove("expanded-sidebar-link");
+      });
+
+      console.log("Sidebar closed through click");
+    }
+
+  });
+};
+Clicking();
 
 $(document).ready(function () {
   $(".dropdown-icon").click(function (event) {
@@ -139,7 +197,7 @@ $(document).ready(function () {
   });
 
   $(".sidebar-div").on("mouseleave", function () {
-    console.log("leave");
+    // console.log("leave");
     $(".dropdown-content").slideUp("fast");
   });
 });
