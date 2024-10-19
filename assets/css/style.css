@@ -3,6 +3,12 @@
     src: url("/assets/fonts/BurgoyneInitials.otf");
 }
 
+@font-face {
+    font-family: "helloParisBold";
+    src: url("/assets/fonts/HelloParisSerif-Medium.woff");
+}
+
+
 
 body {
     margin: 0px;
@@ -42,6 +48,10 @@ body {
     /* Center vertically */
     align-items: center;
     /* Center horizontally */
+
+    /* overflow-y: scroll; */
+
+
 }
 
 
@@ -70,7 +80,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: end;
-    margin-top: -1pc;
+    /* margin-top: -1pc; */
+    /* margin-bottom: 20px; */
 
     width: 100%;
 
@@ -107,14 +118,12 @@ body {
 
 
 
-.left-sec-row2-pillar1,
+/* .left-sec-row2-pillar1,
 .left-sec-row2-pillar2 {
     width: initial;
-    height: 87vh;
-    /* min-width: 10%;  */
+    height: 82vh;
     -webkit-box-sizing: border-box;
-    /* border: 1px solid red; */
-}
+} */
 
 .left-sec-row3 {
     display: flex;
@@ -131,7 +140,7 @@ body {
     font-size: 1.1pc;
     letter-spacing: 5px;
     margin-bottom: 0px;
-    color: #AC8431;
+    color: #C48402;
     /* margin-right: 5pc; */
     margin-left: -6.8pc;
 }
@@ -142,42 +151,97 @@ body {
     font-size: 1.1pc;
     letter-spacing: 5px;
     margin-bottom: 0px;
-    color: #AC8431;
+    color: #C48402;
     margin-left: 10pc;
 
 }
 
 
+.main-olab-logo {
+    margin-top: 10px;
+}
 
 
 
-.mobile-home-design{
+
+.mobile-home-design {
     display: none;
 }
 
 
-/* Firefox */
-@-moz-document url-prefix() {
+
+
+
+@media (min-width: 1390px) and (max-width: 1700px) {
 
     .left-sec-row2-pillar1,
     .left-sec-row2-pillar2 {
-        width: 65%;
-        height: max-content;
+        width: initial;
+        height: 82vh !important;
+        /* -webkit-box-sizing: border-box; */
+        /* border: green 2px solid; */
+
+    }
+
+    /* .left-sec-row2-pillar1{
+        left: 0;
+    } */
+
+
+    .term-pillar1,
+    .term-pillar2 {
+        width: initial;
+        height: 82vh !important;
+        position: fixed;
+    }
+
+    .term-pillar2 {
+        right: 0;
+    }
+
+
+    .main-olab-logo {
+        width: 96%;
+    }
+
+    /* Firefox */
+    @-moz-document url-prefix() {
+
+        .left-sec-row2-pillar1,
+        .left-sec-row2-pillar2 {
+            width: 70%;
+            height: max-content;
+            /* object-fit: cover; */
+        }
     }
 }
 
 
 
-@media (min-width: 1240px) and (max-width: 1390px) {
+/* @media (min-width: 1240px) and (max-width: 1400px) { */
+@media (min-width: 1210px) and (max-width: 1390px) {
 
     .left-sec-row2-pillar1,
     .left-sec-row2-pillar2 {
         width: initial;
-        height: 80vh !important;
+        height: 78vh;
         /* min-width: 10%;  */
-        -webkit-box-sizing: border-box;
+        /* -webkit-box-sizing: border-box; */
         /* border: 1px solid red; */
     }
+
+    .term-pillar1,
+    .term-pillar2 {
+        width: initial;
+        height: 82vh !important;
+        position: fixed;
+    }
+
+    .term-pillar2 {
+        right: 0;
+    }
+
+
 
 
     /* Firefox */
@@ -185,9 +249,13 @@ body {
 
         .left-sec-row2-pillar1,
         .left-sec-row2-pillar2 {
-            width: 60%;
+            width: 67%;
             height: max-content;
         }
+    }
+
+    .main-olab-logo {
+        width: 98%;
     }
 
 }
@@ -198,10 +266,10 @@ body {
 
 @media (max-width: 768px) {
 
-    .left-sec-row1{
+    .left-sec-row1 {
         display: none;
     }
-    
+
 
 
 
@@ -213,11 +281,31 @@ body {
     }
 
 
-    .mobile-home-design{
+    .mobile-home-design {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+
+    .mobile-pillar-left {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .mobile-logo {
+        width: 100%;
+    }
+
+    .mobile-pillar-right {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+
+
 }
 
 
@@ -240,3 +328,200 @@ body {
     width: initial;
     height: 70vh;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.terms-heading-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -1pc;
+    margin-bottom: 40px;
+
+}
+
+.terms-heading-row h1 {
+    font-family: "helloParisBold", sans-serif !important;
+    font-size: 4.4pc;
+    letter-spacing: 3px;
+    color: #C48402;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Ensure the row stays aligned correctly */
+.term-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* height: auto; */
+    box-sizing: border-box;
+
+    height: auto;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+
+/* Wrapper div to keep content centered */
+.center-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    /* Center content horizontally */
+    position: relative;
+    /* So it stays in place */
+
+    height: 80vh;
+
+}
+
+/* Adjust height and scrolling behavior */
+.term-column1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+
+
+    overflow-y: scroll;
+    /* max-height: 500px; */
+    /* overflow: hidden; */
+
+
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+
+    box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.condition-accordation {
+    width: 100%;
+    /* box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75); */
+    border-radius: 8px;
+    /* margin-top: 30px; */
+
+    /* max-height: 0;  */
+    /* overflow: hidden; */
+}
+
+
+.accordion-item {
+    background: transparent !important;
+    background-color: transparent;
+}
+
+
+.accordion-body {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.4;
+    background: transparent !important;
+    background-color: transparent;
+    color: #BF935B !important;
+}
+
+.accordion-body a {
+    color: #BF935B;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.accordion-body h3 {
+    color: #BF935B;
+}
+
+
+.accordion-button {
+    font-size: 18px !important;
+    padding: 15px !important;
+    background: transparent !important;
+    background-color: transparent;
+    border-bottom: 2px solid white !important;
+    color: #976f3b !important;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-weight: bold;
+}
+
+.accordion-body strong {
+    font-size: 1.8pc;
+    color: #BF935B;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-weight: bold;
+}
+
+.condition-para {
+    font-size: 18px;
+    color: #BF935B;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-weight: bold;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23976f3b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat;
+    background-size: 2rem !important;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23976f3b'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    transform: rotate(-180deg);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
