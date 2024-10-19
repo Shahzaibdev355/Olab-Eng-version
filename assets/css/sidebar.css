@@ -397,6 +397,9 @@
 }
 
 
+.mobile-menuClose-btn{
+    display: none;
+}
 
 
 
@@ -406,6 +409,9 @@
 
 
 @media (max-width: 768px) {
+
+
+
 
     .sidebar-div {
         /* border: 2px solid red; */
@@ -420,6 +426,35 @@
        
         width: 0%;
         transition: width 4s ease; 
+    }
+
+
+    .menu-toggle-btn {
+        position: relative;
+        width: 100vw;
+        /* border: 3px solid red; */
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 3.5pc;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .mobile-menuClose-btn{
+        display: inline-block;
+    }
+
+
+
+    .mobile-menuClose-btn:hover{
+        background-color: white!important;
+        
+    }
+    .mobile-menuClose-btn a:hover{
+        color: black!important;
     }
 
 
@@ -455,5 +490,9 @@
         width: 80%;
         border-radius: 12px;
       }
+
+
+
+
     
 }
