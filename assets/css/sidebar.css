@@ -17,11 +17,11 @@
 
     /* transition: width 1.3s ease, max-width 1.3s ease;  */
 
-    transition: width 4s ease; 
+    transition: width 2s ease; 
 }
 
 #mainpage-column1 {
-    transition: width 4s ease;
+    transition: width 3s ease;
     /* Add transition effect for width */
 }
 
@@ -425,7 +425,7 @@
     .navlink-column1 {
        
         width: 0%;
-        transition: width 4s ease; 
+        transition: width 3s ease; 
     }
 
 
@@ -437,7 +437,7 @@
 
     .nav-btn {
         position: absolute;
-        top: 3.5pc;
+        top: 4pc;
         left: 50%;
         transform: translate(-50%, -50%);
 
