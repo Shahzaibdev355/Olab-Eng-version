@@ -8,6 +8,11 @@
     src: url("/assets/fonts/HelloParisSerif-Medium.woff");
 }
 
+@font-face {
+    font-family: "helloParisLight";
+    src: url("/assets/fonts/HelloParisSerif-Regular.woff");
+}
+
 
 
 body {
@@ -296,6 +301,7 @@ body {
 
     .mobile-logo {
         width: 100%;
+        margin-top: -4pc;
     }
 
     .mobile-pillar-right {
@@ -524,4 +530,330 @@ body {
     border-color: none !important;
     outline: 0;
     box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ensure the row stays aligned correctly */
+.contact-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+
+    /* height: auto; */
+    box-sizing: border-box;
+    /* position: relative; */
+}
+
+/* Wrapper div to keep content centered */
+.contact-center-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* margin: auto; */
+    /* Center content horizontally */
+    /* position: relative; */
+    /* So it stays in place */
+
+    /* height: 100vh; */
+
+    /* border: 2px solid red; */
+
+}
+
+
+
+.contact-heading-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -2pc;
+    margin-bottom: 15px;
+
+}
+
+.contact-heading-row h1 {
+    font-family: "helloParisBold", sans-serif !important;
+    font-size: 4.4pc;
+    letter-spacing: 3px;
+    color: #C48402;
+    margin-bottom: 0px;
+}
+
+
+
+
+.contact-row2 {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first,
+.second {
+    /* max-width: 60%; */
+    width: 35%;
+    height: auto;
+    border: none;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    /* padding-block: 5vh;
+    padding-inline: 5vh; */
+
+    box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.75);
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+    z-index: 0;
+
+    /* border: 2px solid green; */
+}
+
+.first {
+    margin-right: 2pc;
+}
+
+.second {
+    margin-left: 2pc;
+}
+
+
+.header1,
+.header2 {
+    text-align: center;
+    /* font-size: clamp(24px, 2vw, 40px); */
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #976f3b;
+    margin-top: 15px;
+    font-family: "helloParisLight", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.first p {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #976f3b;
+}
+
+
+.fill-form {
+    padding: 15px 15px 10px 15px;
+    width: 85%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #BF935B;
+    color: #BF935B;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    /* font-family: "Prida1", sans-serif !important; */
+    /* font-family: "QuinoaSC-medium", sans-serif; */
+    font-size: 16px;
+    /* font-weight: bold; */
+    /* text-transform: lowercase; */
+}
+
+.fill-form::placeholder {
+    color: #BF935B;
+}
+
+.fill-form:focus {
+    border: none;
+    border-bottom: 2px goldenrod solid !important;
+}
+
+
+
+.message-box {
+    padding: 15px 15px 10px 15px;
+    width: 85%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #BF935B;
+    color: #BF935B;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.message-box::placeholder {
+    color: #BF935B;
+}
+
+.message-box:focus {
+    border: none;
+    border-bottom: 2px goldenrod solid !important;
+}
+
+
+
+
+
+
+
+.first button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    /* font-size: clamp(18.5px, 1.5vw, 30px); */
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #BF935B;
+    border: none;
+    transition: 0.3s;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.first button:hover {
+    background-color: #D2B48C;
+}
+
+
+
+
+.newsletter {
+    text-align: center;
+}
+
+
+.newsletter h1 {
+    /* font-size: clamp(24px, 2vw, 40px); */
+    font-family: "helloParisLight", sans-serif;
+    font-size: 32px;
+    /* letter-spacing: 3px; */
+    margin-bottom: 10px;
+    color: #976f3b;
+}
+
+
+.newsletter-para {
+    /* font-size: 18px; */
+    margin-bottom: 15px;
+    color: #976f3b;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+.newsletter-form input {
+    padding: 15px 15px 10px 15px;
+    width: 85%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #BF935B;
+    color: #BF935B;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-weight: bold;
+}
+
+.newsletter-form input::placeholder {
+    color: #BF935B;
+}
+
+.newsletter-form input:focus {
+    border: none;
+    border-bottom: 2px goldenrod solid !important;
+}
+
+.newsletter-form button {
+    padding: 5px 30px 10px 30px;
+    border-radius: 25px;
+    border: none;
+    /* font-size: clamp(18.5px, 1.5vw, 30px); */
+    color: white;
+    font-weight: bold;
+    background-color: #BF935B;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.newsletter-form button:hover {
+    background-color: #D2B48C;
+}
+
+
+.inner {
+    font-size: clamp(18.3px, 1.5vw, 30px);
+    text-align: center;
+}
+
+.address {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #976f3b;
+    font-family: "QuinoaSC-medium", sans-serif;
+    font-weight: bold;
+}
+
+
+
+/* Firefox */
+@-moz-document url-prefix() {
+
+    .first,
+    .second {
+        /* max-width: 60%; */
+        width: 37%;
+
+    }
+
+    .first {
+        margin-right: 2.3pc;
+    }
+
+    .second {
+        margin-left: 2.3pc;
+    }
 }
