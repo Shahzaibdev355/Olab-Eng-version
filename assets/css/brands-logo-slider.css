@@ -40,7 +40,7 @@ html {
     width: max-content;
     /* padding: 0 150px; */
     /* padding: 0 100px; */
-    padding-top: 15px;
+    padding-top: 0px;
     padding-left: 20px;
     padding-right: 48.5pc !important;
     height: 100%;
@@ -56,7 +56,7 @@ html {
 .slide {
     margin: auto;
     /* width: 585px; */
-    width: 620px;
+    width: 640px;
     
     /* height: 500px; */
     /* height: 510px; */
@@ -66,6 +66,35 @@ html {
     /* z-index: 1000; */
     /* background-color: white; */
 }
+
+
+
+
+ /* Firefox */
+ @-moz-document url-prefix() {
+
+    .slide {
+        margin: auto;
+        /* width: 585px; */
+        width: 685px;
+        
+        /* height: 500px; */
+        /* height: 510px; */
+        height: auto;
+        background: ☐ gray;
+        /* border: 3px solid blue; */
+        /* z-index: 1000; */
+        /* background-color: white; */
+    }
+}
+
+
+
+
+
+
+
+
 
 img {
     /* width: 90%;

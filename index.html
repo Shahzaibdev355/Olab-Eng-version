@@ -42,11 +42,11 @@
 
         <aside class="sidebar-div" id="mainpage-column1">
 
-         
+
 
             <div class="menu-toggle-btn mr-15 dashboard2-menu-toggle-btn" style="border: ;">
 
-              
+
 
                 <button id="dashboard2-side-close-btn" class="nav-btn">
 
@@ -70,7 +70,7 @@
 
                         <li id="testClick" class="mobile-menuClose-btn">
                             <a href="#" id="dasboard2-text">
-                                <span class="navlinks-number" > <i class="lni lni-close nav-close-icon"></i> </span>
+                                <span class="navlinks-number"> <i class="lni lni-close nav-close-icon"></i> </span>
                                 <span class="dasboard2-text">Close</span>
                             </a>
                         </li>
@@ -83,7 +83,7 @@
                             </a>
                         </li>
                         <li id="dashboard2-navitem-hover">
-                            <a href="" id="dasboard2-text">
+                            <a href="/about.html" id="dasboard2-text">
                                 <span class="navlinks-number">II </span>
                                 <span class="dasboard2-text">About</span>
                             </a>
@@ -95,7 +95,7 @@
                             </a>
                         </li>
                         <li id="dashboard2-navitem-hover">
-                            <a href="" id="dasboard2-text">
+                            <a href="/brands.html" id="dasboard2-text">
                                 <span class="navlinks-number">IV </span>
                                 <span class="dasboard2-text">Brands</span>
                             </a>
@@ -248,8 +248,7 @@
 
 
 
-                        <img src="/assets/images/Logo ENGLISH landing big2.png" alt="" class="main-olab-logo"
-                            style="">
+                        <img src="/assets/images/Logo ENGLISH landing big2.png" alt="" class="main-olab-logo" style="">
 
 
                         <img src="/assets/images/olab birds.png" alt="" style="position: absolute; width: 14%;  top: 85%;
@@ -333,6 +332,52 @@
 
 
     </script>
+
+
+    <!-- <script>
+        function getLocation() {
+            // Check if the browser supports geolocation
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function (position) {
+                        const latitude = position.coords.latitude;
+                        const longitude = position.coords.longitude;
+
+                        // Do something with the location in the background
+                        // sendLocationToServer(latitude, longitude); 
+                        // Example function
+
+                        console.log(latitude, longitude);
+                        
+                    },
+                    function (error) {
+                        console.error("Error Code = " + error.code + " - " + error.message);
+                    }
+                );
+            }
+        }
+
+        // Example function to handle the location data in the background
+        // function sendLocationToServer(latitude, longitude) {
+        //     // Send the location to your server using an AJAX request, fetch, etc.
+        //     // Example:
+        //     fetch('https://your-server-endpoint.com/save-location', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+        //         body: JSON.stringify({ latitude, longitude })
+        //     });
+        // }
+
+        window.onload = function () {
+            getLocation();  // Trigger the location retrieval on page load
+        };
+    </script> -->
+
+
+    
+
 
 </body>
 
