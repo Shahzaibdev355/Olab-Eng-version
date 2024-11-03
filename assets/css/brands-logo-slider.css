@@ -64,7 +64,7 @@ html {
     
     height: auto;
     background: ☐ gray;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     /* z-index: 1000; */
     /* background-color: white; */
 }
@@ -107,7 +107,7 @@ html {
         /* height: 510px; */
         height: auto;
         background: ☐ gray;
-        border: 3px solid blue;
+        /* border: 3px solid blue; */
         /* z-index: 1000; */
         /* background-color: white; */
     }
