@@ -35,19 +35,22 @@ html {
 
 .slider-wrapper {
     /* margin-top: 10px; */
+    /* margin-left: -1pc!important; */
     margin: auto;
 
     width: max-content;
     /* padding: 0 150px; */
     /* padding: 0 100px; */
     padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 48.5pc !important;
+    padding-left: 0px;
+    padding-right: 45.3pc !important;
     height: 100%;
     display: flex;
     align-items: center;
-    /* gap: 100px; */
+    /* gap: 115px; */
+
     gap: 115px;
+
     /* position: relative;
     left: 10%; */
    
@@ -56,13 +59,12 @@ html {
 .slide {
     margin: auto;
     /* width: 585px; */
-    width: 640px;
+    width: 670px;
     
-    /* height: 500px; */
-    /* height: 510px; */
+    
     height: auto;
     background: ☐ gray;
-    /* border: 3px solid blue; */
+    border: 3px solid blue;
     /* z-index: 1000; */
     /* background-color: white; */
 }
@@ -73,20 +75,47 @@ html {
  /* Firefox */
  @-moz-document url-prefix() {
 
+    .slider-wrapper {
+        /* margin-top: 10px; */
+        /* margin-left: -1pc!important; */
+        margin: auto;
+    
+        width: max-content;
+        /* padding: 0 150px; */
+        /* padding: 0 100px; */
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 50pc !important;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        /* gap: 115px; */
+    
+        gap: 115px;
+    
+        /* position: relative;
+        left: 10%; */
+       
+    }
+
     .slide {
         margin: auto;
         /* width: 585px; */
-        width: 685px;
+        width: 725px;
         
         /* height: 500px; */
         /* height: 510px; */
         height: auto;
         background: ☐ gray;
-        /* border: 3px solid blue; */
+        border: 3px solid blue;
         /* z-index: 1000; */
         /* background-color: white; */
     }
 }
+
+
+
+
 
 
 
