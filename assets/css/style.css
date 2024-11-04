@@ -166,21 +166,7 @@ body {
 
 
 
-.olab-title-img1 {
-    /* font-family: "BurgoyneInitials", sans-serif;
-    font-size: 3.7pc;
-    letter-spacing: 12px;
-    margin-bottom: 0px; */
-    margin-left: -4pc;
-    width: 29%;
-    /* border: 2px solid red; */
-}
 
-.olab-title-img2 {
-    margin-left: 10pc;
-    width: 29%;
-    /* border: 2px solid red; */
-}
 
 
 
@@ -248,7 +234,7 @@ body {
 
 
 
-@media (min-width: 1390px) and (max-width: 1700px) {
+@media (min-width: 1391px) and (max-width: 1700px) {
 
 
     .left-sec-row2 {
@@ -256,10 +242,27 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: end;
-        margin-top: -2pc;
+        margin-top: -1pc;
 
         width: 100%;
 
+    }
+
+
+    .olab-title-img1 {
+        /* font-family: "BurgoyneInitials", sans-serif;
+        font-size: 3.7pc;
+        letter-spacing: 12px;
+        margin-bottom: 0px; */
+        margin-left: -4pc;
+        width: 32.5%;
+        /* border: 2px solid red; */
+    }
+    
+    .olab-title-img2 {
+        margin-left: 10pc;
+        width: 32.5%;
+        /* border: 2px solid red; */
     }
 
 
@@ -353,6 +356,23 @@ body {
 
     }
 
+
+    .olab-title-img1 {
+        /* font-family: "BurgoyneInitials", sans-serif;
+        font-size: 3.7pc;
+        letter-spacing: 12px;
+        margin-bottom: 0px; */
+        margin-left: -4pc;
+        width: 33%;
+        /* border: 2px solid red; */
+    }
+    
+    .olab-title-img2 {
+        margin-left: 10pc;
+        width: 33%;
+        /* border: 2px solid red; */
+    }
+
     @-moz-document url-prefix() {
 
         .left-sec-row2 {
@@ -360,7 +380,7 @@ body {
             flex-direction: row;
             justify-content: center;
             align-items: end;
-            margin-top: -1pc;
+            margin-top: -2pc;
     
             width: 100%;
     
@@ -735,7 +755,7 @@ body {
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 15px;
     /* padding-block: 5vh;
@@ -766,10 +786,10 @@ body {
     text-align: center;
     /* font-size: clamp(24px, 2vw, 40px); */
     margin-bottom: 10px;
-    font-weight: 400;
+    /* font-weight: 400; */
     color: #976f3b;
     margin-top: 15px;
-    font-family: "helloParisLight", sans-serif;
+    font-family: "helloParisBold", sans-serif;
     font-size: 32px;
     text-align: center;
     margin-top: 0px;
@@ -870,7 +890,7 @@ body {
 
 .newsletter h1 {
     /* font-size: clamp(24px, 2vw, 40px); */
-    font-family: "helloParisLight", sans-serif;
+    font-family: "helloParisBold", sans-serif;
     font-size: 32px;
     /* letter-spacing: 3px; */
     margin-bottom: 10px;
@@ -942,12 +962,22 @@ body {
 
 .address {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 16px;
     color: #976f3b;
     font-family: "QuinoaSC-medium", sans-serif;
     font-weight: bold;
 }
 
+.btn-social-media {
+    color: white;
+    border: none;
+    background-color: #BF935B;
+}
+
+.btn-social-media:hover {
+    border: none;
+    background-color: #D4B792;
+}
 
 
 /* Firefox */
