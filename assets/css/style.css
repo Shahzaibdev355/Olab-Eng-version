@@ -218,7 +218,7 @@ body {
 
 
 .main-olab-logo {
-    margin-top: 0.7pc;
+    margin-top: 0.5pc;
 }
 
 
@@ -234,7 +234,7 @@ body {
 
 
 
-@media (min-width: 1391px) and (max-width: 1700px) {
+@media (min-width: 1396px) and (max-width: 1700px) {
 
 
     .left-sec-row2 {
@@ -242,7 +242,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: end;
-        margin-top: -1pc;
+        margin-top: 0px;
 
         width: 100%;
 
@@ -255,13 +255,13 @@ body {
         letter-spacing: 12px;
         margin-bottom: 0px; */
         margin-left: -4pc;
-        width: 32.5%;
+        width: 30%;
         /* border: 2px solid red; */
     }
     
     .olab-title-img2 {
         margin-left: 10pc;
-        width: 32.5%;
+        width: 30%;
         /* border: 2px solid red; */
     }
 
@@ -273,10 +273,11 @@ body {
             flex-direction: row;
             justify-content: center;
             align-items: end;
-            margin-top: -1pc;
+            margin-top: 0pc;
     
             width: 100%;
     
+            /* border: 2px solid red; */
         }
     }
 
@@ -330,7 +331,7 @@ body {
 
         .left-sec-row2-pillar1,
         .left-sec-row2-pillar2 {
-            width: 70%;
+            width: 61%;
             height: max-content!important;
             /* object-fit: cover; */
         }
@@ -340,7 +341,7 @@ body {
 
 
 /* @media (min-width: 1240px) and (max-width: 1400px) { */
-@media (min-width: 1210px) and (max-width: 1390px) {
+@media (min-width: 1210px) and (max-width: 1395px) {
 
 
     .left-sec-row2 {
@@ -348,11 +349,11 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: end;
-        margin-top: -5pc;
-        margin-bottom: 3pc;
+        margin-top: -1.5pc;
+        /* margin-bottom: 3pc; */
 
         width: 100%;
-        border: 3px solid red;
+        /* border: 3px solid red; */
 
     }
 
@@ -363,13 +364,13 @@ body {
         letter-spacing: 12px;
         margin-bottom: 0px; */
         margin-left: -4pc;
-        width: 33%;
+        width: 31.5%;
         /* border: 2px solid red; */
     }
     
     .olab-title-img2 {
         margin-left: 10pc;
-        width: 33%;
+        width: 31.5%;
         /* border: 2px solid red; */
     }
 
@@ -380,7 +381,7 @@ body {
             flex-direction: row;
             justify-content: center;
             align-items: end;
-            margin-top: -2pc;
+            margin-top: -1.5pc;
     
             width: 100%;
     
@@ -429,7 +430,7 @@ body {
 
         .left-sec-row2-pillar1,
         .left-sec-row2-pillar2 {
-            width: 70%;
+            width: 65%;
             height: max-content!important;
         }
     }
