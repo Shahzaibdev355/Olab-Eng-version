@@ -87,6 +87,7 @@ body {
     padding-left: 60px;
     /* background-color: black; */
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -101,7 +102,10 @@ body {
 
 
 
+    /* if comment it will make effect on all pages */
     height: 100vh;
+
+
     justify-content: center;
     /* Center vertically */
     align-items: center;
@@ -240,12 +244,14 @@ body {
     .left-sec-row2 {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: end;
         margin-top: 0px;
 
+
         width: 100%;
 
+        border: 2px solid red;
     }
 
 
@@ -254,13 +260,13 @@ body {
         font-size: 3.7pc;
         letter-spacing: 12px;
         margin-bottom: 0px; */
-        margin-left: -4pc;
+        /* margin-left: -2pc; */
         width: 30%;
         /* border: 2px solid red; */
     }
     
     .olab-title-img2 {
-        margin-left: 10pc;
+        /* margin-left: 10pc; */
         width: 30%;
         /* border: 2px solid red; */
     }
@@ -506,7 +512,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: -1pc;
+    margin-top: -1.3pc;
     margin-bottom: 40px;
 
 }
@@ -516,7 +522,7 @@ body {
     font-size: 4.4pc;
     letter-spacing: 3px;
     color: #C48402;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 
@@ -548,7 +554,7 @@ body {
     position: relative;
     /* So it stays in place */
 
-    height: 80vh;
+    height: 82vh;
 
 }
 
