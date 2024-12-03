@@ -38,10 +38,6 @@
 }
 
 
-/* .nav-btn i{
-    font-size: 28px;
-} */
-
 .nav-btn .nav-open-icon {
     font-size: 28px;
 }
@@ -406,6 +402,55 @@
 
 
 
+/* =====================navbar sticky=============================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fixed-top {
+    background-color: white !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    opacity: 1;
+    animation: fadeIn 0.5s ease;
+    /* Apply the fadeIn animation */
+    box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.75);
+}
+
+.fixed-top.active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -442,6 +487,31 @@
         transform: translate(-50%, -50%);
 
     }
+
+
+    .nav-btn-2 {
+        position: absolute;
+        top: 2pc!important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0px!important;
+      }
+
+      .nav-btn-3{
+        position: absolute;
+        top: 4.5pc;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0px!important;
+      }
+
+
+      /* .nav-open-icon-scroll {
+        top: 2pc!important;
+    } */
+
+
+
 
     .mobile-menuClose-btn{
         display: inline-block;
