@@ -291,9 +291,9 @@ body {
     .left-sec-row2-pillar1,
     .left-sec-row2-pillar2 {
         width: initial;
-        height: 82vh !important;
+        height: 79vh !important;
         /* -webkit-box-sizing: border-box; */
-        /* border: green 2px solid; */
+        border: green 3px solid;
 
     }
 
@@ -355,7 +355,7 @@ body {
     .main-olab-logo {
         /* width: 96%; */
 
-        width: 91%;
+        width: 92%;
 
         margin-top: -4pc;
         /* border: 3px solid red; */
@@ -427,7 +427,7 @@ body {
     .left-sec-row2-pillar1,
     .left-sec-row2-pillar2 {
         width: initial;
-        height: 78vh;
+        height: 74vh;
         /* min-width: 10%;  */
         /* -webkit-box-sizing: border-box; */
         /* border: 1px solid red; */
