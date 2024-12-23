@@ -246,7 +246,7 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: end;
-        margin-top: -1pc;
+        margin-top: 0pc;
 
 
         width: 100%;
@@ -357,7 +357,7 @@ body {
 
         width: 92%;
 
-        margin-top: -4pc;
+        margin-top: -5pc;
         /* border: 3px solid green; */
     }
 
@@ -385,8 +385,8 @@ body {
     .main-olab-logo {
 
         width: 100%!important;
-        margin-top: -4pc;
-        border: 3px solid red!important;
+        margin-top: -5pc;
+        /* border: 3px solid red!important; */
     }
 
 
@@ -423,7 +423,7 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: end;
-        margin-top: -1.5pc;
+        margin-top: 0pc;
         /* margin-bottom: 3pc; */
 
         width: 100%;
@@ -535,8 +535,8 @@ body {
     }
 
     .main-olab-logo {
-        width: 94%;
-        margin-top: -3pc;
+        width: 96%;
+        margin-top: -5pc;
         /* border: 3px solid purple; */
     }
 
