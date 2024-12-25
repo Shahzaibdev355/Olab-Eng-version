@@ -1,3 +1,46 @@
+.product-main-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+
+    height: auto;
+    box-sizing: border-box;
+    /* border: 2px solid green; */
+
+}
+
+.product-center-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+
+    height: 100vh;
+
+
+    overflow-y: hidden;
+
+    /* border: 2px solid red; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .product-slider-section {
     /* padding-top: 70px; */
     position: absolute;
@@ -411,7 +454,7 @@
 
     scroll-behavior: smooth;
     overflow-y: hidden;
-    width: 80%;
+    width: 95%;
     margin: auto;
 
     z-index: 1000;
@@ -427,12 +470,15 @@
     font-size: 0;
     display: flex;
     justify-content: center;
+
     height: 75vh;
-    padding-top: 8px;
+    padding-top: 0px;
     width: 80%;
 }
 
-
+/* .gallery8 img{
+    border: 3px solid red;
+} */
 
 
 
@@ -529,7 +575,7 @@
 
     scroll-behavior: smooth;
     overflow-y: hidden;
-    width: 80%;
+    width: 95%;
     margin: auto;
 
     z-index: 1000;
@@ -545,9 +591,13 @@
     font-size: 0;
     display: flex;
     justify-content: center;
+
     height: 75vh;
-    padding-top: 8px;
+
+    padding-top: 0px;
+
     width: 80%;
+
 }
 
 
@@ -579,7 +629,9 @@
 
     scroll-behavior: smooth;
     overflow-y: hidden;
-    width: 80%;
+
+    width: 95%;
+
     margin: auto;
 
     z-index: 1000;
@@ -595,8 +647,10 @@
     font-size: 0;
     display: flex;
     justify-content: center;
+    
+
     height: 75vh;
-    padding-top: 8px;
+    padding-top: 0px;
     width: 80%;
 }
 
@@ -620,18 +674,19 @@
 
     overflow: scroll;
 
-    height: 75vh;
+    height: 78vh;
     scroll-snap-type: both mandatory;
     scroll-padding: 1rem;
 
 
     scroll-behavior: smooth;
     overflow-y: hidden;
-    width: 80%;
+     width: 95%;
     margin: auto;
 
     z-index: 1000;
     /* border: 3px solid green; */
+
 
 }
 
@@ -643,11 +698,16 @@
     font-size: 0;
     display: flex;
     justify-content: center;
+
+    /* padding-top: 8px; */
+    /* padding-bottom: 25px; */
+
+
     height: 75vh;
-    padding-top: 8px;
-    padding-bottom: 15px;
+    padding-top: 0px;
     width: 80%;
 }
+
 
 
 
@@ -674,7 +734,9 @@
 
     scroll-behavior: smooth;
     overflow-y: hidden;
-    width: 80%;
+
+     width: 95%;
+
     margin: auto;
 
     z-index: 1000;
@@ -690,10 +752,22 @@
     font-size: 0;
     display: flex;
     justify-content: center;
-    height: 75vh;
+
+
+
+    /* height: 75vh;
     padding-top: 8px;
+    width: 80%; */
+
+
+    height: 75vh;
+    padding-top: 0px;
     width: 80%;
+
+    /* border: 2px solid greenyellow; */
 }
+
+
 
 
 
@@ -760,7 +834,7 @@
 
     scroll-behavior: smooth;
     overflow-y: hidden;
-    width: 80%;
+    width: 95%;
     margin: auto;
 
     z-index: 1000;
@@ -777,7 +851,7 @@
     display: flex;
     justify-content: center;
     height: 75vh;
-    padding-top: 8px;
+    padding-top: 0px;
     width: 80%;
 }
 
