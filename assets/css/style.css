@@ -1798,7 +1798,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: -22pc;
+    margin-top: -20.5pc;
     /* border: 3px solid red; */
 }
 
@@ -2648,8 +2648,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -5pc;
+    margin-top: -4pc;
     text-align: center;
+    margin-left: 3pc;
 }
 
 .misson-column3 h3 {
@@ -3829,6 +3830,7 @@ body {
     .misson-column3 {
 
         margin-top: 0pc;
+        margin-left: 0pc;
     }
 
     .misson-column3 p {
