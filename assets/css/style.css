@@ -2366,7 +2366,11 @@ body {
 
 .concept-row1 {
     display: flex;
-    flex-direction: row;
+
+    flex-direction: column;
+    align-items: center;
+
+
     justify-content: center;
     padding-top: 40px;
 }
@@ -2374,6 +2378,7 @@ body {
 .concept-row1-img1 {
     width: 20%;
     height: auto;
+    margin-top: -8pc;
 }
 
 
@@ -2384,8 +2389,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
+    /* align-items: center; */
+    /* position: absolute; */
     /* margin-top: 30px; */
 }
 
@@ -2403,12 +2408,14 @@ body {
 
 
 .concept-row2-img-2 {
-    width: 6%;
+    /* width: 6%; */
+    width: 17%;
     height: auto;
 }
 
 .concept-row2-img-3 {
-    width: 6%;
+     /* width: 6%; */
+     width: 17%;
     height: auto;
 }
 
@@ -2419,7 +2426,7 @@ body {
     justify-content: space-evenly;
     width: 95%;
     margin: auto;
-    margin-top: -5pc !important;
+    margin-top: 1pc !important;
     align-items: center;
 }
 
