@@ -2364,6 +2364,7 @@ body {
 }
 
 
+
 .concept-row1 {
     display: flex;
 
@@ -2376,9 +2377,9 @@ body {
 }
 
 .concept-row1-img1 {
-    width: 20%;
+    width: 17%;
     height: auto;
-    margin-top: -8pc;
+    margin-top: -9pc;
 }
 
 
@@ -2401,9 +2402,9 @@ body {
 } */
 .concept-row2 h2 {
     font-family: "helloParisLight", sans-serif;
-    font-size: 5pc;
+    font-size: 5.5pc;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 9px;
 }
 
 
@@ -2505,10 +2506,11 @@ body {
 .concept-row6 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 95%;
     margin: auto;
     align-items: center;
+    margin-top: -7pc;
 }
 
 .concept-row6-mob {
@@ -2527,7 +2529,7 @@ body {
 }
 
 .concept-row6-img2 {
-    width: 15%;
+    width: 20%;
     height: auto;
 }
 
@@ -2558,6 +2560,30 @@ body {
     height: auto;
 }
 
+.concept-right-pillar-img {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    width: initial;
+    height: 100vh;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2581,7 +2607,7 @@ body {
     justify-content: space-evenly;
     width: 50%;
     margin: auto;
-    margin-top: 7pc;
+    margin-top: 0pc;
 }
 
 
@@ -2758,7 +2784,7 @@ body {
 }
 
 .concept-product-row3-img2 {
-    width: 35%;
+    width: 40%;
     height: auto;
 }
 
