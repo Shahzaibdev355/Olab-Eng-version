@@ -63,7 +63,15 @@
 
 
 .aside-nav-link{
-    height: 85vh;
+
+
+    /* height: 85vh; */
+
+    /* testing for center */
+    height: max-content;
+
+
+
     display: flex;
     /* border: 3px solid orchid; */
 
@@ -79,7 +87,7 @@
     flex-direction: column;
     flex: 1;
 
-    line-height: 3.4;
+    line-height: 3;
 
     /* align-items: center; */
     align-self: center;
@@ -87,7 +95,7 @@
 
     /* border: 3px solid blue; */
 
-    margin-top: 5pc;
+    margin-top: 2pc;
 }
 
 .aside-nav-link ul li {
@@ -137,7 +145,7 @@
 
 
 .aside-nav-link ul li:hover {
-    background-color: black;
+    background-color:  #C48402;
 }
 
 .aside-nav-link ul li:hover a {

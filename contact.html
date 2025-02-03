@@ -22,6 +22,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
@@ -253,7 +255,7 @@
 
                                         <form id="newsletterForm" class="newsletter-form">
 
-                                            <input type="email" name="email" placeholder="Your Email*">
+                                            <input  type="email" name="email" placeholder="Your Email*">
 
                                             <button type="submit" class="btn btn-dark btn-block mb-4">
                                                 Subscribe
@@ -342,6 +344,79 @@
 
     <!-- <script src="/node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script>
+
+
+    <script>
+
+
+
+
+
+        $(function () {
+            $('#contactForm').submit(function (event) {
+                event.preventDefault();
+
+                var formData = $(this).serialize(); // Serialize form data
+
+                $.ajax({
+                    url: 'contact.php', // PHP file to send form data
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        Swal.fire({
+                            icon: 'success',
+                            html:
+                                '<p>ÒLAB GROUP a bien reçu votre message</p>' +
+                                '<p>Merci!</p>',
+                            showCloseButton: true,
+                            focusConfirm: false,
+                        }).then(() => {
+                            // Clear the form fields after the success message is closed
+                            $('#contactForm').trigger('reset');
+                        });
+                    },
+                    error: function () {
+                        Swal.fire('Error', 'Failed to send the email.', 'error');
+                    }
+                });
+            });
+        });
+
+
+
+        $(function () {
+            $('#newsletterForm').submit(function (event) {
+                event.preventDefault(); // Prevent the form from submitting
+
+                var formData = $(this).serialize(); // Serialize form data
+
+                $.ajax({
+                    url: 'newsletter.php', // PHP script to handle form data
+                    type: 'POST',
+                    data: formData,
+                    success: function (response) {
+                        Swal.fire({
+                            icon: 'success',
+                            html:
+                                "<p> - Merci d'avoir rejoint notre newsletter! </p>",
+
+                            showCloseButton: true,
+                            focusConfirm: false,
+
+
+                        });
+                    },
+                    error: function () {
+                        Swal.fire('Error', 'Failed to subscribe Newsletter.', 'error');
+                    }
+                });
+            });
+        });
+
+
+
+    </script>
+
 
 
     <script>
