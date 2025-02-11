@@ -1228,7 +1228,7 @@ body {
 
     /* border: 2px solid red; */
 
-    overflow-y: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -1378,7 +1378,7 @@ body {
 
     /* border: 2px solid red; */
 
-    overflow-y: hidden;
+    overflow-y: scroll;
 
     /* border: 2px solid red; */
 
@@ -2025,15 +2025,16 @@ body {
 }
 
 .about-row8 img {
-    width: 15%;
+    width: 20%;
     height: auto;
 }
 
 .about-row8 h1 {
     position: absolute;
-    font-size: 2.9pc;
+    font-size: 3.5pc;
     font-family: "helloParisBold", sans-serif !important;
-    margin-top: 85px;
+    margin-top: 95px;
+    letter-spacing: 5px;
 }
 
 
@@ -2141,10 +2142,11 @@ body {
 }
 
 .about-sec2-row1-img2 {
-    width: 15%;
-    height: 220px;
     /* height: auto; */
     margin-left: -70px;
+
+    width: 20%;
+    height: 270px;
 }
 
 .about-sec2-row1-img3 {
@@ -2162,11 +2164,14 @@ body {
 
 .about-sec2-row1 h1 {
     position: absolute;
-    font-size: 2.9pc;
+    font-size: 3.5pc;
+    letter-spacing: 5px;
     font-family: "helloParisBold", sans-serif !important;
-    margin-top: 85px;
+    margin-top: 6pc;
     transform: translate(-50%, -50%);
-    left: 50%;
+    left: 52%;
+
+    
 }
 
 
@@ -2176,7 +2181,7 @@ body {
     flex-direction: column;
     align-items: center;
     align-self: center;
-    margin-top: -26pc;
+    margin-top: -25pc;
 }
 
 .about-sec2-column1 p {
@@ -3061,6 +3066,44 @@ body {
 
 
 
+
+
+
+
+
+
+/* ================Page Animations================  */
+.about-animation {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.concept-animation {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.partner-animation {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.project-animation {
+    opacity: 1;
+    
+    /* transform: translateY(100px); */
+}
+
+.contact-animation {
+    opacity: 1;
+    /* transform: translateY(100px); */
+}
+
+
+
+.animate__delay {
+    animation-delay: 1s;
+}
 
 
 
@@ -4271,3 +4314,51 @@ body {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+/* .scroll-thumb{
+    scrollbar-color: #888 #f1f1f1;
+    scrollbar-width: thin;
+} */
+
+/* Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    /* Make the track transparent */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #BF935B;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  /* Firefox */
+  @-moz-document url-prefix() {
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #87B0ED transparent;
+  
+    }
+  
+    *::-moz-scrollbar-thumb {
+      border-radius: 10px;
+      /* Add border-radius here */
+    }
+  }
+
+
+

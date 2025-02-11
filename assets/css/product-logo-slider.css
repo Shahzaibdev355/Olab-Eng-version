@@ -167,7 +167,7 @@ img {
     position: absolute;
     content: "";
     display: block;
-    top: 55px;
+    top: 25px;
     /* top: 50px; */
     left: -20px;
     width: 40px;
@@ -188,7 +188,7 @@ img {
 
 .active-slide {
     position: absolute;
-    top: 60px;
+    top: 30px;
     /* top: 60px; */
     /* left: 40px; */
     left: 30px;

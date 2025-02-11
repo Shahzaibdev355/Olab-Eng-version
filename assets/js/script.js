@@ -325,3 +325,38 @@ $(document).ready(function () {
     $(".dropdown-content").slideUp("fast");
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navItems = document.querySelectorAll("#dashboard2-navitem-hover");
+  const activeItem = document.querySelector(".aside-nav-link .active");
+
+  navItems.forEach((item) => {
+      // Handle hover events
+      item.addEventListener("mouseenter", () => {
+          if (activeItem) activeItem.classList.remove("active");
+      });
+
+      item.addEventListener("mouseleave", () => {
+          if (activeItem) activeItem.classList.add("active");
+      });
+  });
+});

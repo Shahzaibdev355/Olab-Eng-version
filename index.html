@@ -33,6 +33,14 @@
         rel="stylesheet">
 
 
+          <!-- base styles to prevent container from moving during transition -->
+    <style media="screen">
+        [data-barba="container"] {
+          position: absolute;
+          font-family: monospace;
+        }
+      </style>
+
 </head>
 
 <body>
@@ -76,8 +84,8 @@
                         </li>
 
 
-                        <li id="dashboard2-navitem-hover" style="background-color: #C48402;">
-                            <a href="/index.html" id="dasboard2-text" style="color: white;">
+                        <li id="dashboard2-navitem-hover" class="active">
+                            <a href="/index.html" id="dasboard2-text" style="">
                                 <span class="navlinks-number">I </span>
                                 <span class="dasboard2-text">Home</span>
                             </a>
@@ -179,7 +187,7 @@
                             </a>
                         </li>
                         <li id="dashboard2-navitem-hover">
-                            <a href="#" id="dasboard2-text">
+                            <a href="news.html" id="dasboard2-text">
                                 <span class="navlinks-number">X</span>
                                 <span class="dasboard2-text">News</span>
                             </a>
@@ -354,47 +362,7 @@
     </script>
 
 
-    <!-- <script>
-        function getLocation() {
-            // Check if the browser supports geolocation
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    function (position) {
-                        const latitude = position.coords.latitude;
-                        const longitude = position.coords.longitude;
-
-                        // Do something with the location in the background
-                        // sendLocationToServer(latitude, longitude); 
-                        // Example function
-
-                        console.log(latitude, longitude);
-                        
-                    },
-                    function (error) {
-                        console.error("Error Code = " + error.code + " - " + error.message);
-                    }
-                );
-            }
-        }
-
-        // Example function to handle the location data in the background
-        // function sendLocationToServer(latitude, longitude) {
-        //     // Send the location to your server using an AJAX request, fetch, etc.
-        //     // Example:
-        //     fetch('https://your-server-endpoint.com/save-location', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json'
-        //         },
-        //         body: JSON.stringify({ latitude, longitude })
-        //     });
-        // }
-
-        window.onload = function () {
-            getLocation();  // Trigger the location retrieval on page load
-        };
-    </script> -->
-
+ 
 
     
 

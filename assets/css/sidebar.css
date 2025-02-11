@@ -142,11 +142,23 @@
    
 }
 
+.aside-nav-link li.active {
+    background-color: black;
+    color: white!important; /* Optional for text color change */
+}
+
+/* Ensure the anchor tag inside active li has white text */
+.aside-nav-link li.active a {
+    color: white !important; /* Enforces the white color for the anchor text */
+}
+
 
 
 .aside-nav-link ul li:hover {
-    background-color:  #C48402;
+    background-color:  black;
 }
+
+
 
 .aside-nav-link ul li:hover a {
     color: white;

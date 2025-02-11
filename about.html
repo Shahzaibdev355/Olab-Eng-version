@@ -27,6 +27,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -75,7 +82,7 @@
                                 <span class="dasboard2-text">Home</span>
                             </a>
                         </li>
-                        <li id="dashboard2-navitem-hover">
+                        <li id="dashboard2-navitem-hover" class="active">
                             <a href="/about.html" id="dasboard2-text">
                                 <span class="navlinks-number">II </span>
                                 <span class="dasboard2-text">About</span>
@@ -169,7 +176,7 @@
                             </a>
                         </li>
                         <li id="dashboard2-navitem-hover">
-                            <a href="#" id="dasboard2-text">
+                            <a href="news.html" id="dasboard2-text">
                                 <span class="navlinks-number">X</span>
                                 <span class="dasboard2-text">News</span>
                             </a>
@@ -232,7 +239,7 @@
                                         Neoclassicism is both an artistic movement, and a
                                         stylistic  period <span><br></span> which emerged around 1750 in the European Enlightenment era, <span><br></span>
                                         contemporary and subsequent to the popularity of the Grand Tour. 
-                                        <span class="about-row3-span1">Wikipedia</span>
+                                        <span class="about-row3-span1 animate__animated animate__fadeIn animate__delay-1s">Wikipedia</span>
                                     </p>
                 
                                     <img src="./assets/images/SUN OPACITY.002-2.png" alt=""
@@ -289,8 +296,8 @@
                 
                         <div class="about-row4">
                             <img src="/assets/images/couple olabgroup.png" alt=""
-                                class="about-row4-img1 animate__animated animate__fadeIn">
-                            <img src="/assets/images/COUPLE olab.png" alt="" class="about-row4-img2 animate__animated animate__fadeIn">
+                                class="about-row4-img1 animate__animated animate__fadeIn animate__delay-1s">
+                            <img src="/assets/images/COUPLE olab.png" alt="" class="about-row4-img2 animate__animated animate__fadeIn animate__delay-1s">
                 
                             <!-- Mobile img -->
                 
@@ -316,11 +323,11 @@
                 
                             <div class="about-column3 col-md-8">
                                 <h1 class="about-animatio">Neoclassicism <br class="about-mob-br2"> defines our values </h1>
-                                <img src="/assets/images/roses2.001.png" alt="">
+                                <img src="/assets/images/roses2.001.png" alt="" class="wow animate__animated animate__fadeIn animate__delay-1s">
                             </div>
                 
                             <div class="col-md-2">
-                                <img src="/assets/images/SUN OPACITY.001-2.png" alt="" class="about-row5-img2">
+                                <img src="/assets/images/SUN OPACITY.001-2.png" alt="" class="about-row5-img2 wow animate__animated animate__fadeIn animate__delay-2s">
                             </div>
                         </div>
                 
@@ -378,7 +385,7 @@
                 
                         <div class="about-row8 about-animatio">
                 
-                            <img src="/assets/images/SUN OPACITY.002.png" alt="">
+                            <img src="/assets/images/SUN OPACITY.002.png" alt="" class="wow animate__animated animate__fadeIn animate__delay-1s">
                             <h1> What We Do  </h1>
                         </div>
                 
@@ -442,7 +449,7 @@
                         <div class="about-sec2-row1 col-md-12">
 
                             <img src="./assets/images/SUN OPACITY.001-1.png" alt=""
-                                class="about-sec2-row1-img1  animate__animated animate__fadeIn animate__delay-1s">
+                                class="about-sec2-row1-img1  wow animate__animated animate__fadeIn animate__delay-1s">
                 
                 
                             <img src="/assets/images/SUN OPACITY.002.png" alt="" class="about-sec2-row1-img2">
@@ -474,11 +481,11 @@
                 
                         </div>
                 
-                        <div class="about-sec2-row2 about-animatio" style="display: ;">
+                        <div class="about-sec2-row2" style="display: ;">
                 
-                            <img src="/assets/images/GIFT boxes.001.png" alt="" class="about-sec2-row2-img1">
-                            <img src="/assets/images/carriage-5197035_1920.png" alt="" class="about-sec2-row2-img2 wow animate__animated animate__fadeIn">
-                            <img src="/assets/images/GIFT boxes.002.png" alt="" class="about-sec2-row2-img3">
+                            <img src="/assets/images/GIFT boxes.001.png" alt="" class="about-sec2-row2-img1 about-animatio">
+                            <img src="/assets/images/carriage-5197035_1920.png" alt="" class="about-sec2-row2-img2 wow animate__animated animate__fadeIn animate__delay-1s">
+                            <img src="/assets/images/GIFT boxes.002.png" alt="" class="about-sec2-row2-img3 about-animatio">
                         </div>
 
                         <br>
@@ -507,6 +514,17 @@
 
     <script src="/assets/js/navbar.js"></script>
     <script src="/assets/js/script.js"></script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+   
+<script>
+    new WOW().init();
+    </script>
 
 
 
@@ -540,6 +558,62 @@
 
 
     </script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Include ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- <script src="assets/js/security.js"></script> -->
+
+<script>
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+function applyGsapAnimations() {
+    // Define the viewport width threshold for mobile view
+    const mobileViewThreshold = 768;
+
+    // Check if the current viewport width is greater than the threshold
+    if (window.innerWidth > mobileViewThreshold) {
+        // Create the animation
+        gsap.utils.toArray('.about-animatio').forEach(box => {
+            gsap.fromTo(box,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.9,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: box,
+                        start: "top 100%",
+                        end: "top 0%",
+                        toggleActions: "play reverse play reverse"
+                    }
+                }
+            );
+        });
+    }
+}
+
+// Apply GSAP animations when the page loads
+applyGsapAnimations();
+
+// Reapply GSAP animations when the window is resized
+window.addEventListener('resize', applyGsapAnimations);
+
+
+</script>
 
 
 

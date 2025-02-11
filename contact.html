@@ -29,6 +29,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+
 </head>
 
 <body>
@@ -164,10 +169,16 @@
                             </a>
                         </li>
 
-                        <li id="dashboard2-navitem-hover">
+                        <li id="dashboard2-navitem-hover" class="active">
                             <a href="/contact.html" id="dasboard2-text">
                                 <span class="navlinks-number">XI </span>
                                 <span class="dasboard2-text">Contact</span>
+                            </a>
+                        </li>
+                        <li id="dashboard2-navitem-hover">
+                            <a href="news.html" id="dasboard2-text">
+                                <span class="navlinks-number">X</span>
+                                <span class="dasboard2-text">News</span>
                             </a>
                         </li>
                     </div>
@@ -220,7 +231,7 @@
 
                         <div class="contact-row2">
 
-                            <div class="first contact-animation" style="">
+                            <div class="first wow animate__animated animate__zoomIn" style="">
                                 <h1 class="header1">Let's Suceed Together </h1>
 
                                 <form id="contactForm" style="text-align: center;">
@@ -240,7 +251,7 @@
 
 
 
-                            <div class="second contact-animation" style="">
+                            <div class="second wow animate__animated animate__zoomIn" style="">
 
 
                                 <div class="newsletter grow">
@@ -443,6 +454,24 @@
 
 
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+<script>
+    new WOW().init();
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Include ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 
 
