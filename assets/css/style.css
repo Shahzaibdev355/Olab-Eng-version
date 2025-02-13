@@ -226,6 +226,19 @@ body {
 }
 
 
+.olab-logo-couple{
+    position: absolute; 
+    width: 16%;  
+    top: 63%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);
+}
+
+#rotatingLogo {
+    transition: transform 0.1s ease-out;
+}
+
+
 
 
 .mobile-home-design {

@@ -33,13 +33,17 @@
         rel="stylesheet">
 
 
-          <!-- base styles to prevent container from moving during transition -->
+    <!-- base styles to prevent container from moving during transition -->
     <style media="screen">
         [data-barba="container"] {
-          position: absolute;
-          font-family: monospace;
+            position: absolute;
+            font-family: monospace;
         }
-      </style>
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 </head>
 
@@ -143,7 +147,7 @@
                                     <li><a href="/Crystal.html">Crystal Ô est.Paris</a></li>
                                     <li><a href="/Nea.html">Nea Ô</a></li>
                                     <li><a href="/Neo.html">Neô</a></li>
-                                    
+
                                     <li><a href="/zen-o.html">Zen Ô</a></li>
                                 </ul>
                             </div>
@@ -244,38 +248,38 @@
 
                 <div class="left-sec-row2">
 
-                            <img src="/assets/images/title olab gold.001.png" alt="" class="olab-title-img1" style="border: ">
-                            <img src="/assets/images/golden group title.001.png" alt="" class="olab-title-img2" style="border: ">
+                    <img src="/assets/images/title olab gold.001.png" alt="" class="olab-title-img1"
+                        id="zoomFadeInImageLeft">
+                    <img src="/assets/images/golden group title.001.png" alt="" class="olab-title-img2"
+                        id="zoomFadeInImageRight">
 
                 </div>
 
 
 
-                <div class="left-sec-row1 " >
+                <div class="left-sec-row1 ">
 
-                    <img src="/assets/images/paris pillars.001.png" alt="" class="left-sec-row2-pillar1" style="border: ">
-
-
-
-                    <div style="display: flex; flex-direction: column; align-items: center; border: " >
-
-                        <!-- <div class="left-sec-row2">
-
-                            <img src="/assets/images/title olab gold.001.png" alt="" class="olab-title-img1">
-                            <img src="/assets/images/golden group title.001.png" alt="" class="olab-title-img2">
-
-                        </div> -->
-
-
-                        <img src="/assets/images/olab copyrighted.png" alt="" style="position: absolute; width: 16%;  top: 63%;
-                        left: 48.5%;
-                        transform: translate(-50%, -50%);">
+                    <img src="/assets/images/paris pillars.001.png" alt="" class="left-sec-row2-pillar1"
+                        style="border: ">
 
 
 
-                        <!-- <img src="/assets/images/Logo ENGLISH landing big2.png" alt="" class="main-olab-logo" style="border: 2px solid red;"> -->
+                    <div style="display: flex; flex-direction: column; align-items: center; border: ">
 
-                        <img src="/assets/images/ENGLISH Circle.001.png" alt="" class="main-olab-logo" style="border: ">
+
+
+
+                        <img src="/assets/images/olab copyrighted.png" alt="" 
+                        class="olab-logo-couple" 
+                        
+                        id="rotatingLogo"
+                        >
+
+
+
+
+                        <img src="/assets/images/ENGLISH Circle.001.png" alt="" class="main-olab-logo"
+                            >
 
 
 
@@ -285,15 +289,16 @@
 
 
                         <div class="left-sec-row3">
-                            <h1 class="left-sec-row3-heading1">EXQUISITE</h1>
-                            <h1 class="left-sec-row3-heading2">BRANDS</h1>
+                            <h1 class="left-sec-row3-heading1" id="zoomFadeInHeadingLeft">EXQUISITE</h1>
+                            <h1 class="left-sec-row3-heading2" id="zoomFadeInHeadingRight">BRANDS</h1>
 
                         </div>
 
                     </div>
 
 
-                    <img src="/assets/images/paris pillars.001 copy.png" alt="" class="left-sec-row2-pillar2" style="border: ">
+                    <img src="/assets/images/paris pillars.001 copy.png" alt="" class="left-sec-row2-pillar2"
+                        style="border: ">
                 </div>
 
 
@@ -322,17 +327,148 @@
 
     <script src="/assets/js/script.js"></script>
 
-    <!-- <script>
-        $(document).ready(function () {
-            $(".dropdown-icon").click(function (event) {
-                event.stopPropagation();
-                $(this).closest(".product-dropdown").find(".dropdown-content").slideToggle("fast");
-                console.log("hello");
-            });
-        });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 
-    </script> -->
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Include ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        // Register ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate the image with zoom-in from left and fade-in effect
+        gsap.fromTo(
+            "#zoomFadeInImageLeft",
+            {
+                x: +100,           // Start position (right offset)
+                scale: 0.4,        // Start with more reduced size
+                opacity: 0,        // Start fully transparent
+            },
+            {
+                x: 0,              // Move to original position
+                scale: 1,          // Full size for a zoom-in effect
+                opacity: 1,        // Fully visible
+                duration: 2,       // Duration of the animation
+                ease: "power2.out", // Smooth easing
+
+            }
+        );
+
+
+
+        gsap.fromTo(
+            "#zoomFadeInImageRight",
+            {
+                x: -100,           // Start position (right offset)
+                scale: 0.4,        // Start with more reduced size
+                opacity: 0,        // Start fully transparent
+            },
+            {
+                x: 0,              // Move to original position
+                scale: 1,          // Full size for a zoom-in effect
+                opacity: 1,        // Fully visible
+                duration: 2,       // Duration of the animation
+                ease: "power2.out", // Smooth easing
+
+            }
+        );
+
+
+
+        // gsap.from("#zoomFadeInImageRight", {
+        //     x: -100,
+        //     scale: 0.8,
+        //     opacity: 0,
+        //     duration: 2.3,
+        //     ease: "power2.out",
+
+        // });
+
+
+        // Animate the image with zoom-in from left and fade-in effect
+        gsap.fromTo(
+            "#zoomFadeInHeadingLeft",
+            {
+                x: +100,           // Start position (right offset)
+                scale: 0.4,        // Start with more reduced size
+                opacity: 0,        // Start fully transparent
+            },
+            {
+                x: 0,              // Move to original position
+                scale: 1,          // Full size for a zoom-in effect
+                opacity: 1,        // Fully visible
+                duration: 2,       // Duration of the animation
+                ease: "power2.out", // Smooth easing
+
+            }
+        );
+
+
+
+        gsap.fromTo(
+            "#zoomFadeInHeadingRight",
+            {
+                x: -100,           // Start position (right offset)
+                scale: 0.4,        // Start with more reduced size
+                opacity: 0,        // Start fully transparent
+            },
+            {
+                x: 0,              // Move to original position
+                scale: 1,          // Full size for a zoom-in effect
+                opacity: 1,        // Fully visible
+                duration: 2,       // Duration of the animation
+                ease: "power2.out", // Smooth easing
+
+            }
+            
+        );
+
+
+
+       
+
+
+  // Animate the image with flip and move from left
+  gsap.fromTo(
+    "#rotatingLogo",
+    {
+        opacity: 0,         // Start fully transparent
+        x: "-100%",         // Start far left
+        rotationY: -180,    // Start with a full flip (backward facing)
+        transform: "translate(-50%, -50%)", // Maintain position during animation
+    },
+    {
+        opacity: 1,         // Fade to visible
+        x: "0%",            // Move to the original position
+        rotationY: 0,       // Complete the flip to face forward
+        duration: 4,        // Animation duration
+        ease: "power2.out", // Smooth easing
+        onComplete: () => {
+            // Final reset for safety
+            const element = document.querySelector("#rotatingLogo");
+            element.style.top = "63%";
+            element.style.transform = "translate(-50%, -50%)";
+        },
+    }
+);
+
+
+
+
+    </script>
 
     <script src="/node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
 
@@ -362,9 +498,9 @@
     </script>
 
 
- 
 
-    
+
+
 
 
 </body>
