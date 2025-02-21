@@ -71,6 +71,8 @@
 body {
     margin: 0px;
     padding: 0px;
+    overflow: hidden !important;
+    overflow-x: hidden;
 }
 
 
@@ -226,9 +228,9 @@ body {
 }
 
 
-.olab-logo-couple{
-    position: absolute; 
-    width: 16%;  
+.olab-logo-couple {
+    position: absolute;
+    width: 16%;
     top: 63%;
     left: 48.5%;
     transform: translate(-50%, -50%);
@@ -388,16 +390,13 @@ body {
 
 
 
-@media (min-width: 1396px) and (max-width: 1700px) and (min-height: 745px) and (max-height: 1000px) {
-    
-
-}
+@media (min-width: 1396px) and (max-width: 1700px) and (min-height: 745px) and (max-height: 1000px) {}
 
 
 @media (min-height: 745px) and (max-height: 920px) {
     .main-olab-logo {
 
-        width: 100%!important;
+        width: 100% !important;
         margin-top: -5pc;
         /* border: 3px solid red!important; */
     }
@@ -406,17 +405,17 @@ body {
     .left-sec-row2-pillar1,
     .left-sec-row2-pillar2 {
         width: initial;
-        height: 70vh!important;
+        height: 70vh !important;
         /* border: 3px solid red!important; */
     }
 
 
-     /* Firefox */
-     @-moz-document url-prefix() {
+    /* Firefox */
+    @-moz-document url-prefix() {
 
         .left-sec-row2-pillar1,
         .left-sec-row2-pillar2 {
-            width: 52%!important;
+            width: 52% !important;
             height: max-content !important;
             /* border: 3px solid blue!important; */
         }
@@ -611,7 +610,7 @@ body {
 
 
 
-.term-left-section-column1{
+.term-left-section-column1 {
     display: flex;
     flex-direction: column;
     /* if comment it will make effect on all pages */
@@ -2184,7 +2183,7 @@ body {
     transform: translate(-50%, -50%);
     left: 52%;
 
-    
+
 }
 
 
@@ -2435,8 +2434,8 @@ body {
 }
 
 .concept-row2-img-3 {
-     /* width: 6%; */
-     width: 17%;
+    /* width: 6%; */
+    width: 17%;
     height: auto;
 }
 
@@ -3103,7 +3102,7 @@ body {
 
 .project-animation {
     opacity: 1;
-    
+
     /* transform: translateY(100px); */
 }
 
@@ -3689,7 +3688,7 @@ body {
         height: max-content;
     }
 
-   
+
 
 
     .project-center-content-wrapper {
@@ -4273,7 +4272,7 @@ body {
         margin-bottom: 20px;
     }
 
-    .term-left-section-column1{
+    .term-left-section-column1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -4288,7 +4287,7 @@ body {
         color: #C48402;
         margin-bottom: 0px;
         margin-top: 3.7pc;
-      }
+    }
 
     .terms-sec1-img-row h1 {
         font-size: 38px;
@@ -4346,32 +4345,121 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
     /* Width of the scrollbar */
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: transparent;
     /* Make the track transparent */
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #BF935B;
     border-radius: 10px;
     border: none;
-  }
-  
-  /* Firefox */
-  @-moz-document url-prefix() {
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
     * {
-      scrollbar-width: thin;
-      scrollbar-color: #87B0ED transparent;
-  
+        scrollbar-width: thin;
+        scrollbar-color: #87B0ED transparent;
+
     }
-  
+
     *::-moz-scrollbar-thumb {
-      border-radius: 10px;
-      /* Add border-radius here */
+        border-radius: 10px;
+        /* Add border-radius here */
     }
-  }
+}
 
 
 
+
+
+.preloader-bg {
+    background-image: url("../images/Preloader\ bg.001-new.png");
+    width: 100%;
+    height: 100vh;
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+
+}
+
+
+.preloader-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-top: -10pc; */
+    position: relative;
+    top: -5pc;
+    
+}
+
+
+.preloader-cartImg1 {
+    width: 25%;
+    height: auto;
+    margin-left: 7.5pc;
+
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.preloader-cartImg2 {
+    width: 25%;
+    height: auto;
+    margin-right: 7.5pc;
+
+
+    position: relative;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+
+.preloader-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* border: 2px solid red; */
+    width: 35%;
+    /* margin: auto; */
+
+    margin-top: 4pc!important;
+    margin-left: 5pc;
+}
+
+
+.preloader-paris {
+    width: 20%;
+
+    position: relative;
+    opacity: 0;
+    transform: translate(-150%, -150%);
+}
+
+.preloader-couple {
+    width: 15%;
+}
+
+.preloader-louvre-paris {
+    width: 20%;
+    position: relative;
+    opacity: 0;
+    transform: translate(150%, -150%);
+}
