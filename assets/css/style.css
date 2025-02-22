@@ -4405,7 +4405,7 @@ body {
     justify-content: space-between;
     /* margin-top: -10pc; */
     position: relative;
-    top: -5pc;
+    top: 4pc;
     
 }
 
@@ -4413,7 +4413,7 @@ body {
 .preloader-cartImg1 {
     width: 25%;
     height: auto;
-    margin-left: 7.5pc;
+    margin-left: 5pc;
 
     position: relative;
     opacity: 0;
@@ -4423,7 +4423,7 @@ body {
 .preloader-cartImg2 {
     width: 25%;
     height: auto;
-    margin-right: 7.5pc;
+    margin-right: 5pc;
 
 
     position: relative;
@@ -4438,16 +4438,16 @@ body {
     justify-content: space-between;
 
     /* border: 2px solid red; */
-    width: 35%;
+    width: 75%;
     /* margin: auto; */
 
-    margin-top: 4pc!important;
-    margin-left: 5pc;
+    margin-top: -10pc!important;
+    /* margin-left: 5pc; */
 }
 
 
 .preloader-paris {
-    width: 20%;
+    width: 13%;
 
     position: relative;
     opacity: 0;
@@ -4459,8 +4459,21 @@ body {
 }
 
 .preloader-louvre-paris {
-    width: 20%;
+    width: 13%;
     position: relative;
     opacity: 0;
     transform: translate(150%, -150%);
+}
+
+
+
+.preloader-olab-logo-couple {
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    left: 48.5%;
+    /* transform: translate(-50%, -50%); */
+
+    transform: translate(-50%, -50%); /* Initial rotation */
+    opacity: 0; /* Start fully transparent */
 }

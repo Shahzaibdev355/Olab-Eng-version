@@ -47,7 +47,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
-    
+
 
 </head>
 
@@ -57,26 +57,27 @@
 
     <div class="preloader-bg" id="preloade">
 
-        <!-- <div class="preloader-row2">
+        <div class="preloader-row2">
             <img src="/assets/images/preloader/PARIS Kiosk.003.png" alt="" class="preloader-paris">
             <img src="/assets/images/preloader/Louvre paris.001 copy.png" alt="" class="preloader-louvre-paris">
-        </div> -->
+        </div>
 
-        <!-- <img src="./assets/images/preloader/Preloader.001.png" style="position: absolute; width: 100%; height: 100vh; z-index: 1100; object-fit: contain" alt=""> -->
+        <img src="/assets/images/olab copyrighted.png" alt="" class="preloader-olab-logo-couple" id="">
 
-        <!-- <div class="preloader-row1">
-            <img src="/assets/images/preloader/Olab concepts5.png" alt="" class="  preloader-cartImg1">
-            <img src="/assets/images/preloader/Olab concepts6.png" alt="" class="preloader-cartImg2">
-        </div> -->
 
-        
-            
+        <div class="preloader-row1">
+            <img src="/assets/images/preloader/Preloader.002.png" alt="" class="  preloader-cartImg1">
+            <img src="/assets/images/preloader/Preloader.003.png" alt="" class="preloader-cartImg2">
+        </div>
+
+
+
     </div>
 
 
     <div class="main-wrapper">
 
-       
+
 
         <aside class="sidebar-div" id="mainpage-column1" style="display: ;">
 
@@ -295,17 +296,13 @@
 
 
 
-                        <img src="/assets/images/olab copyrighted.png" alt="" 
-                        class="olab-logo-couple" 
-                        
-                        id="rotatingLogo"
-                        >
+                        <img src="/assets/images/olab copyrighted.png" alt="" class="olab-logo-couple"
+                            id="rotatingLogo">
 
 
 
 
-                        <img src="/assets/images/ENGLISH Circle.001.png" alt="" class="main-olab-logo"
-                            >
+                        <img src="/assets/images/ENGLISH Circle.001.png" alt="" class="main-olab-logo">
 
 
 
@@ -375,179 +372,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            
-                gsap.to(".preloader-cartImg1", {
-                    duration: 2, 
-                    x: 0, 
-                    opacity: 1, 
-                    ease: "power2.out", 
-                });
-
-                gsap.to(".preloader-cartImg2", {
-                    duration: 2, 
-                    x: 0, 
-                    opacity: 1, 
-                    ease: "power2.out", 
-                });
 
 
-                
-                gsap.to(".preloader-paris", {
-                    duration: 2.5, 
-                    x: 0, 
-                    y: 0, 
-                    opacity: 1,
-                    ease: "power2.out", 
-                });
-
-                gsap.to(".preloader-louvre-paris", {
-                    duration: 2.5, 
-                    x: 0, 
-                    y: 0, 
-                    opacity: 1,
-                    ease: "power2.out", 
-                });
-
-
-
-
-
-
-            });
-
-            
-
-
-
-        </script>
-
-
-    <script>
-        // Register ScrollTrigger plugin
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Animate the image with zoom-in from left and fade-in effect
-        gsap.fromTo(
-            "#zoomFadeInImageLeft",
-            {
-                x: +100,           // Start position (right offset)
-                scale: 0.4,        // Start with more reduced size
-                opacity: 0,        // Start fully transparent
-            },
-            {
-                x: 0,              // Move to original position
-                scale: 1,          // Full size for a zoom-in effect
-                opacity: 1,        // Fully visible
-                duration: 2,       // Duration of the animation
-                ease: "power2.out", // Smooth easing
-
-            }
-        );
-
-
-
-        gsap.fromTo(
-            "#zoomFadeInImageRight",
-            {
-                x: -100,           // Start position (right offset)
-                scale: 0.4,        // Start with more reduced size
-                opacity: 0,        // Start fully transparent
-            },
-            {
-                x: 0,              // Move to original position
-                scale: 1,          // Full size for a zoom-in effect
-                opacity: 1,        // Fully visible
-                duration: 2,       // Duration of the animation
-                ease: "power2.out", // Smooth easing
-
-            }
-        );
-
-
-
-        // gsap.from("#zoomFadeInImageRight", {
-        //     x: -100,
-        //     scale: 0.8,
-        //     opacity: 0,
-        //     duration: 2.3,
-        //     ease: "power2.out",
-
-        // });
-
-
-        // Animate the image with zoom-in from left and fade-in effect
-        gsap.fromTo(
-            "#zoomFadeInHeadingLeft",
-            {
-                x: +100,           // Start position (right offset)
-                scale: 0.4,        // Start with more reduced size
-                opacity: 0,        // Start fully transparent
-            },
-            {
-                x: 0,              // Move to original position
-                scale: 1,          // Full size for a zoom-in effect
-                opacity: 1,        // Fully visible
-                duration: 2,       // Duration of the animation
-                ease: "power2.out", // Smooth easing
-
-            }
-        );
-
-
-
-        gsap.fromTo(
-            "#zoomFadeInHeadingRight",
-            {
-                x: -100,           // Start position (right offset)
-                scale: 0.4,        // Start with more reduced size
-                opacity: 0,        // Start fully transparent
-            },
-            {
-                x: 0,              // Move to original position
-                scale: 1,          // Full size for a zoom-in effect
-                opacity: 1,        // Fully visible
-                duration: 2,       // Duration of the animation
-                ease: "power2.out", // Smooth easing
-
-            }
-            
-        );
-
-
-
-       
-
-
-  // Animate the image with flip and move from left
-  gsap.fromTo(
-    "#rotatingLogo",
-    {
-        opacity: 0,         // Start fully transparent
-        x: "-100%",         // Start far left
-        rotationY: -180,    // Start with a full flip (backward facing)
-        transform: "translate(-50%, -50%)", // Maintain position during animation
-    },
-    {
-        opacity: 1,         // Fade to visible
-        x: "0%",            // Move to the original position
-        rotationY: 0,       // Complete the flip to face forward
-        duration: 4,        // Animation duration
-        ease: "power2.out", // Smooth easing
-        onComplete: () => {
-            // Final reset for safety
-            const element = document.querySelector("#rotatingLogo");
-            element.style.top = "63%";
-            element.style.transform = "translate(-50%, -50%)";
-        },
-    }
-);
-
-
-
-
-    </script>
+   <script src="/assets/js/preloader.js"></script>
 
     <script src="/node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
 
