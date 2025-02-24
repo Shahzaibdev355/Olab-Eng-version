@@ -1,69 +1,69 @@
 @font-face {
     font-family: "chocolatebox";
-    src: url("/assets/fonts/ChocolateBoxDecorative.otf");
+    src: url("/Eng-version/assets/fonts/ChocolateBoxDecorative.otf");
 }
 
 @font-face {
     font-family: "Garcedo";
-    src: url("/assets/fonts/Garcedo\ Alt.otf");
+    src: url("/Eng-version/assets/fonts/Garcedo\ Alt.otf");
 }
 
 
 
 @font-face {
     font-family: "helloParisBold";
-    src: url("/assets/fonts/HelloParisSerif-Medium.woff");
+    src: url("/Eng-version/assets/fonts/HelloParisSerif-Medium.woff");
 }
 
 @font-face {
     font-family: "helloParisLight";
-    src: url("/assets/fonts/HelloParisSerif-Regular.woff");
+    src: url("/Eng-version/assets/fonts/HelloParisSerif-Regular.woff");
 }
 
 @font-face {
     font-family: "Prida1";
-    src: url("/assets/fonts/Prida01Black.otf");
+    src: url("/Eng-version/assets/fonts/Prida01Black.otf");
 }
 
 @font-face {
     font-family: "Prida1-bold";
-    src: url("/assets/fonts/Prida01Bold.otf");
+    src: url("/Eng-version/assets/fonts/Prida01Bold.otf");
 }
 
 @font-face {
     font-family: "Bridgnorth-Bold";
-    src: url("/assets/fonts/Bridgnorth-Bold.ttf");
+    src: url("/Eng-version/assets/fonts/Bridgnorth-Bold.ttf");
 }
 
 @font-face {
     font-family: "Bridgnorth-Regular";
-    src: url("/assets/fonts/Bridgnorth-Regular\ 2.ttf");
+    src: url("/Eng-version/assets/fonts/Bridgnorth-Regular\ 2.ttf");
 }
 
 @font-face {
     font-family: "Ambassador";
-    src: url("/assets/fonts/Ambassador\ Script\ Regular.ttf");
+    src: url("/Eng-version/assets/fonts/Ambassador\ Script\ Regular.ttf");
 }
 
 @font-face {
     font-family: "QuinoaSC";
-    src: url("/assets/fonts/QuinoaSC-Semibold.ttf");
+    src: url("/Eng-version/assets/fonts/QuinoaSC-Semibold.ttf");
 }
 
 @font-face {
     font-family: "QuinoaSC-medium";
-    src: url("/assets/fonts/QuinoaSC-Medium.ttf");
+    src: url("/Eng-version/assets/fonts/QuinoaSC-Medium.ttf");
 }
 
 @font-face {
     font-family: "QuinoaSC-bold";
-    src: url("/assets/fonts/QuinoaSC-Bold.ttf");
+    src: url("/Eng-version/assets/fonts/QuinoaSC-Bold.ttf");
 }
 
 
 @font-face {
     font-family: "BurgoyneInitials";
-    src: url("/assets/fonts/BurgoyneInitials.otf");
+    src: url("/Eng-version/assets/fonts/BurgoyneInitials.otf");
 }
 
 
@@ -88,7 +88,10 @@ body {
     /* border: 3px solid green; */
     padding-left: 60px;
     /* background-color: black; */
-    overflow-y: hidden;
+
+
+    overflow-y: scroll;
+
     overflow-x: hidden;
 }
 
@@ -1644,6 +1647,19 @@ body {
 
 
 
+.about-left-section {
+    width: 100%;
+    
+    padding-left: 60px;
+
+    overflow-y: auto; 
+
+    overflow-x: hidden;
+
+    height: 100vh;
+}
+
+
 
 
 
@@ -1651,8 +1667,6 @@ body {
 .about-left-section-column1 {
     display: flex;
     flex-direction: column;
-    /* border: 2px solid palevioletred; */
-
 
     /* if i disable it scrollbar style will also be gone */
     /* height: 100vh; */
@@ -1662,11 +1676,11 @@ body {
     justify-content: center;
     align-items: center;
 
+    overflow-y: auto;
+    height: auto;
 
+    border: 3px solid red;
 }
-
-
-
 
 
 
@@ -1679,10 +1693,9 @@ body {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-
-
-    height: auto;
     box-sizing: border-box;
+
+    overflow: hidden;
 
 
 
@@ -1697,11 +1710,11 @@ body {
     margin: auto;
     /* position: relative; */
 
-    height: max-content;
-
-
+    
+    
     overflow-x: hidden !important;
-    overflow-y: hidden;
+    overflow-y: auto;
+    height: auto;
 
 }
 
@@ -2034,6 +2047,8 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: 40px;
+
+    position: relative;
 }
 
 .about-row8 img {
@@ -2146,6 +2161,8 @@ body {
     /* justify-content: center; */
     justify-content: space-between;
     margin-top: 40px;
+
+    position: relative;
 }
 
 .about-sec2-row1-img1 {
@@ -3086,8 +3103,8 @@ body {
 
 /* ================Page Animations================  */
 .about-animation {
-    opacity: 0;
-    transform: translateY(100px);
+    /* opacity: 0;
+    transform: translateY(100px); */
 }
 
 .concept-animation {
@@ -3174,6 +3191,8 @@ body {
     }
 
 
+
+
     .mobile-home-design {
         display: flex;
         flex-direction: column;
@@ -3203,6 +3222,13 @@ body {
 
 
 
+
+    .about-left-section {
+        width: 100%;
+        padding-left: 0px;
+    
+        
+    }
 
 
 
