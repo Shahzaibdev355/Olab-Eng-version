@@ -4330,6 +4330,15 @@ body {
     }
 
 
+
+    .concept-right-pillar-img {
+        display: none;
+      }
+
+      .left-sec-row2{
+        display: none;
+      }
+
 }
 
 
@@ -4367,7 +4376,7 @@ body {
   @-moz-document url-prefix() {
     * {
       scrollbar-width: thin;
-      scrollbar-color: #87B0ED transparent;
+      scrollbar-color: #BF935B transparent;
   
     }
   
