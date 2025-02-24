@@ -362,7 +362,6 @@
 
             </div>
 
-
         </section>
 
     </div>
@@ -392,7 +391,7 @@
                 var formData = $(this).serialize(); // Serialize form data
 
                 $.ajax({
-                    url: 'contact.php', // PHP file to send form data
+                    url: '/Eng-version/contact.php', // PHP file to send form data
                     type: 'POST',
                     data: formData,
                     success: function (response) {
@@ -424,7 +423,7 @@
                 var formData = $(this).serialize(); // Serialize form data
 
                 $.ajax({
-                    url: 'newsletter.php', // PHP script to handle form data
+                    url: '/Eng-version/newsletter.php', // PHP script to handle form data
                     type: 'POST',
                     data: formData,
                     success: function (response) {

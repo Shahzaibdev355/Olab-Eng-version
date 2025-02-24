@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const preloaderTimeline = gsap.timeline();
 
-  if (!Cookies.get("preloaderShown")) {
+  if (!Cookies.get("preloaderShown-eng")) {
     // Preloader animations
     preloaderTimeline
       .fromTo(
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       );
 
-    Cookies.set("preloaderShown", "true");
+    Cookies.set("preloaderShown-eng", "true");
   } else {
     document.querySelector("#preloader").remove(); // Corrected DOM manipulation
   }
