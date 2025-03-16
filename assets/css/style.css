@@ -226,9 +226,9 @@ body {
 }
 
 
-.olab-logo-couple{
-    position: absolute; 
-    width: 16%;  
+.olab-logo-couple {
+    position: absolute;
+    width: 16%;
     top: 63%;
     left: 48.5%;
     transform: translate(-50%, -50%);
@@ -388,16 +388,13 @@ body {
 
 
 
-@media (min-width: 1396px) and (max-width: 1700px) and (min-height: 745px) and (max-height: 1000px) {
-    
-
-}
+@media (min-width: 1396px) and (max-width: 1700px) and (min-height: 745px) and (max-height: 1000px) {}
 
 
 @media (min-height: 745px) and (max-height: 920px) {
     .main-olab-logo {
 
-        width: 100%!important;
+        width: 100% !important;
         margin-top: -5pc;
         /* border: 3px solid red!important; */
     }
@@ -406,17 +403,17 @@ body {
     .left-sec-row2-pillar1,
     .left-sec-row2-pillar2 {
         width: initial;
-        height: 70vh!important;
+        height: 70vh !important;
         /* border: 3px solid red!important; */
     }
 
 
-     /* Firefox */
-     @-moz-document url-prefix() {
+    /* Firefox */
+    @-moz-document url-prefix() {
 
         .left-sec-row2-pillar1,
         .left-sec-row2-pillar2 {
-            width: 52%!important;
+            width: 52% !important;
             height: max-content !important;
             /* border: 3px solid blue!important; */
         }
@@ -611,7 +608,7 @@ body {
 
 
 
-.term-left-section-column1{
+.term-left-section-column1 {
     display: flex;
     flex-direction: column;
     /* if comment it will make effect on all pages */
@@ -2184,7 +2181,7 @@ body {
     transform: translate(-50%, -50%);
     left: 52%;
 
-    
+
 }
 
 
@@ -2435,8 +2432,8 @@ body {
 }
 
 .concept-row2-img-3 {
-     /* width: 6%; */
-     width: 17%;
+    /* width: 6%; */
+    width: 17%;
     height: auto;
 }
 
@@ -3103,7 +3100,7 @@ body {
 
 .project-animation {
     opacity: 1;
-    
+
     /* transform: translateY(100px); */
 }
 
@@ -3145,6 +3142,20 @@ body {
 
 
 
+
+.home-sec1-img-row-img-mob {
+    display: none;
+}
+
+.home-mob-left-pillar-img,
+.home-mob-right-pillar-img {
+    display: none;
+}
+
+ 
+.nav-open-icon-fr{
+    display: none;
+}
 
 
 
@@ -3689,7 +3700,7 @@ body {
         height: max-content;
     }
 
-   
+
 
 
     .project-center-content-wrapper {
@@ -4273,7 +4284,7 @@ body {
         margin-bottom: 20px;
     }
 
-    .term-left-section-column1{
+    .term-left-section-column1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -4288,7 +4299,7 @@ body {
         color: #C48402;
         margin-bottom: 0px;
         margin-top: 3.7pc;
-      }
+    }
 
     .terms-sec1-img-row h1 {
         font-size: 38px;
@@ -4333,12 +4344,71 @@ body {
 
     .concept-right-pillar-img {
         display: none;
-      }
+    }
 
-      .left-sec-row2{
+    .left-sec-row2 {
         display: none;
-      }
+    }
 
+
+
+
+
+
+
+    /* french version home mobile logo */
+
+
+    .home-sec1-img-row-img-mob {
+        display: block;
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        /* object-fit: cover; */
+        /* border: 3px solid red; */
+        padding-bottom: 20px;
+
+
+        /* margin-top: -95px; */
+
+    }
+
+
+    .home-mob-left-pillar-img {
+        left: 0;
+        display: block;
+        position: fixed;
+        z-index: 9;
+        width: initial;
+        height: 100vh;
+    }
+
+    .home-mob-right-pillar-img {
+        display: block;
+        position: fixed;
+        right: 0;
+        z-index: 9;
+        width: initial;
+        height: 100vh;
+    }
+
+
+    .nav-open-icon-fr {
+        display: flex;
+        width: 40%;
+        margin: auto;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+
+    .nav-open-icon-fr-pc{
+        display: none;
+    }
+
+
+    .language-change-btn{
+        display: none!important;
+    }
 }
 
 
@@ -4359,32 +4429,32 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
     /* Width of the scrollbar */
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: transparent;
     /* Make the track transparent */
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #BF935B;
     border-radius: 10px;
     border: none;
-  }
-  
-  /* Firefox */
-  @-moz-document url-prefix() {
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
     * {
-      scrollbar-width: thin;
-      scrollbar-color: #BF935B transparent;
-  
+        scrollbar-width: thin;
+        scrollbar-color: #BF935B transparent;
+
     }
-  
+
     *::-moz-scrollbar-thumb {
-      border-radius: 10px;
-      /* Add border-radius here */
+        border-radius: 10px;
+        /* Add border-radius here */
     }
-  }
+}
 
 
 
@@ -4398,12 +4468,12 @@ body {
 
 
 
-  .preloader-bg {
+.preloader-bg {
     background-image: url("../images/preloader/Preloader.001.png");
     width: 100%;
     height: 100vh;
 
-    overflow: hidden!important;
+    overflow: hidden !important;
 
     /* background-position:center center; */
     background-repeat: no-repeat;
@@ -4430,7 +4500,7 @@ body {
     /* margin-top: -10pc; */
     position: relative;
     top: 4pc;
-    
+
 }
 
 
@@ -4465,7 +4535,7 @@ body {
     width: 75%;
     /* margin: auto; */
 
-    margin-top: -10pc!important;
+    margin-top: -10pc !important;
     /* margin-left: 5pc; */
 }
 
@@ -4498,6 +4568,52 @@ body {
     left: 48.5%;
     /* transform: translate(-50%, -50%); */
 
-    transform: translate(-50%, -50%); /* Initial rotation */
-    opacity: 0; /* Start fully transparent */
+    transform: translate(-50%, -50%);
+    /* Initial rotation */
+    opacity: 0;
+    /* Start fully transparent */
+}
+
+
+
+
+.language-change-btn {
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    display: flex;
+    z-index: 1000;
+
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); */
+
+    /* border-radius: 10px; */
+
+    border: 1px solid black;
+}
+
+.language-change-btn a {
+    padding: 0px 10px;
+    text-decoration: none;
+    /* color: white; */
+    font-size: 15.5px;
+    font-family: "Libre Baskerville", serif;
+}
+
+.language-change-btn-link1 {
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-change-btn-link2 {
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.language-change-btn .active-tab {
+    background-color: black;
+    color: white;
 }

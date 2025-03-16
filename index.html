@@ -90,7 +90,7 @@
                 <button id="dashboard2-side-close-btn" class="nav-btn">
 
 
-                    <div id="dashboard2-sidebar-close" class="nav-close-icon-div">
+                    <div id="dashboard2-sidebar-close" class="nav-close-icon-div" style="">
                         <i class="lni lni-close nav-close-icon"></i>
                         <p>Close</p>
                     </div>
@@ -107,7 +107,7 @@
                     <div class="navlink-column1">
 
 
-                        <li id="testClick" class="mobile-menuClose-btn">
+                        <li id="testClick" class="mobile-menuClose-btn" >
                             <a href="#" id="dasboard2-text">
                                 <span class="navlinks-number"> <i class="lni lni-close nav-close-icon"></i> </span>
                                 <span class="dasboard2-text">Close</span>
@@ -257,6 +257,11 @@
 
             <div class="left-section-column1" style="border: ">
 
+                <div class="language-change-btn">
+                    <a href="/index.html" class="language-change-btn-link1">FR</a>
+                    <a href="/Eng-version/index.html" class="language-change-btn-link2 active-tab">EN</a>
+                </div>
+
 
                 <div class="mobile-home-design">
 
@@ -266,11 +271,7 @@
 
                 </div>
 
-                <!-- <div class="left-sec-row1">
-                 
-                    <img src="/Eng-version/assets/images/olab title.png" alt="" class="olab-title-img1">
-                    <img src="/Eng-version/assets/images/group title.png" alt="" class="olab-title-img2">
-                </div> -->
+        
 
 
                 <div class="left-sec-row2">
@@ -325,11 +326,6 @@
                 </div>
 
 
-                <!-- <div class="left-sec-row3">
-                <h1>LES MARQUES</h1>
-                <h1>EXQUISES</h1>
-                
-            </div> -->
 
 
             </div>
@@ -354,7 +350,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <!-- <script src="/Eng-version/assets/js/preloader.js"></script> -->
+    <script src="/Eng-version/assets/js/preloader.js"></script>
 
 
     <script>
@@ -402,6 +398,26 @@
 
 
     </script>
+
+
+<script>
+    // Select elements
+    const link1 = document.querySelector('.language-change-btn-link1');
+    const link2 = document.querySelector('.language-change-btn-link2');
+
+    // Add hover event to link2
+    link1.addEventListener('mouseover', () => {
+        link2.classList.remove('active-tab');
+        link1.classList.add('active-tab');
+    });
+
+    // Optional: Add logic to re-add the 'active' class when the hover ends
+    link1.addEventListener('mouseout', () => {
+        link2.classList.add('active-tab');
+        link1.classList.remove('active-tab');
+    });
+</script>
+
 
 
 

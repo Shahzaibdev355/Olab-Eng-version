@@ -154,9 +154,11 @@ const mobileNavbarWidth = document.querySelector(".navlink-column1");
 // const testing = document.querySelector(".aside-nav-link ul li a")
 
 let dashboard2Togglebtn = document.getElementById("dashboard2-side-close-btn");
-let dashboard2SideBarClose = document.getElementById(
-  "dashboard2-sidebar-close"
-);
+
+
+let dashboard2SideBarClose = document.getElementById( "dashboard2-sidebar-close");
+
+
 let dashboard2SideBarOpen = document.getElementById("dashboard2-sidebar-open");
 
 let mobileMenuDiv = document.querySelector(".dashboard2-menu-toggle-btn");
@@ -179,7 +181,7 @@ let collapseTimeout = null; // Holds the timeout for collapsing
 
 
 
-
+mobileNavbarWidth.style.width = "100%";
 
 
 
@@ -199,7 +201,17 @@ function updateSidebarWidth(open) {
       dashboard2Column1.style.width = "4.5%";
     } else {
       dashboard2Column1.style.width = "0%";
-      mobileNavbarWidth.style.width = "0%";
+
+
+      mobileNavbarWidth.style.width = "100%";
+
+
+      // After width becomes 0%, reset it to 100% after a delay
+      setTimeout(() => {
+        mobileNavbarWidth.style.width = "100%";
+      }, 3000); // Adjust delay as needed (in milliseconds)
+
+
     }
   }
   dashboard2Hidden = !open;
@@ -288,6 +300,8 @@ const Clicking = () => {
 
 
       dashboard2SideBarClose.style.display = "none";
+
+
       dashboard2SideBarOpen.style.display = "block";
 
       // Remove expanded class from the dropdown links
@@ -316,7 +330,7 @@ $(document).ready(function () {
 
   // Toggle sidebar class on button click
   $("#dashboard2-sidebar-close").click(function () {
-    console.log("click");
+    console.log("click outside close");
     $(".dropdown-content").slideUp("fast");
   });
 
@@ -360,3 +374,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
+
+
+
+
+
+
+
+
+
+
