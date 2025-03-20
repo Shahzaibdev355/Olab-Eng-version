@@ -131,6 +131,7 @@ body {
 
     height: auto;
     box-sizing: border-box;
+    width: 100%;
 
 }
 
@@ -188,6 +189,30 @@ body {
     height: 82vh;
     -webkit-box-sizing: border-box;
 } */
+
+
+.left-sec-row2-new-pillar1{
+    width: initial;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+
+    opacity: 200; 
+    /* z-index: 1100; */
+
+    z-index: 2000; /* Send the image below the div content */
+    pointer-events: none; /* Ensures image doesn't interfere with hover */
+}
+
+.left-sec-row2-pillar2{
+    width: initial;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+
+    /* top: 0; */
+}
+
 
 .left-sec-row3 {
     display: flex;
@@ -302,7 +327,7 @@ body {
 
 
     .left-sec-row2-pillar1,
-    .left-sec-row2-pillar2 {
+    .left-sec-row2-pilla {
         width: initial;
         height: 79vh !important;
         /* -webkit-box-sizing: border-box; */
@@ -366,9 +391,8 @@ body {
 
 
     .main-olab-logo {
-        /* width: 96%; */
 
-        width: 92%;
+        width: 73%;
 
         margin-top: -5pc;
         /* border: 3px solid green; */
@@ -378,7 +402,7 @@ body {
     @-moz-document url-prefix() {
 
         .left-sec-row2-pillar1,
-        .left-sec-row2-pillar2 {
+        .left-sec-row2-pilla {
             width: 44%;
             height: max-content !important;
             /* object-fit: cover; */
@@ -394,14 +418,14 @@ body {
 @media (min-height: 745px) and (max-height: 920px) {
     .main-olab-logo {
 
-        width: 100% !important;
+        width: 77% !important;
         margin-top: -5pc;
         /* border: 3px solid red!important; */
     }
 
 
     .left-sec-row2-pillar1,
-    .left-sec-row2-pillar2 {
+    .left-sec-row2-pilla {
         width: initial;
         height: 70vh !important;
         /* border: 3px solid red!important; */
@@ -412,7 +436,7 @@ body {
     @-moz-document url-prefix() {
 
         .left-sec-row2-pillar1,
-        .left-sec-row2-pillar2 {
+        .left-sec-row2-pilla{
             width: 52% !important;
             height: max-content !important;
             /* border: 3px solid blue!important; */
@@ -474,7 +498,7 @@ body {
 
 
     .left-sec-row2-pillar1,
-    .left-sec-row2-pillar2 {
+    .left-sec-row2-pill {
         width: initial;
         height: 74vh;
         /* min-width: 10%;  */
@@ -538,14 +562,14 @@ body {
     @-moz-document url-prefix() {
 
         .left-sec-row2-pillar1,
-        .left-sec-row2-pillar2 {
+        .left-sec-row2-pilla {
             width: 56%;
             height: max-content !important;
         }
     }
 
     .main-olab-logo {
-        width: 96%;
+        width: 74%;
         margin-top: -5pc;
         /* border: 3px solid purple; */
     }
@@ -1659,6 +1683,8 @@ body {
 
     justify-content: center;
     align-items: center;
+
+    
 
 
 }
@@ -3149,7 +3175,7 @@ body {
 
 .home-mob-left-pillar-img,
 .home-mob-right-pillar-img {
-    display: none;
+    display: none!important;
 }
 
  
@@ -4426,21 +4452,46 @@ body {
 } */
 
 /* Chrome, Safari, and Edge */
-::-webkit-scrollbar {
-    width: 10px;
+
+
+.scrollBarStyle::-webkit-scrollbar {
+    width: 0px;
     /* Width of the scrollbar */
 }
 
-::-webkit-scrollbar-track {
+.scrollBarStyle::-webkit-scrollbar-track {
     background: transparent;
     /* Make the track transparent */
 }
 
-::-webkit-scrollbar-thumb {
+.scrollBarStyle::-webkit-scrollbar-thumb {
     background-color: #BF935B;
     border-radius: 10px;
     border: none;
 }
+
+
+
+
+.project-center-content-wrapper::-webkit-scrollbar,
+.partner-center-content-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+.project-center-content-wrapper::-webkit-scrollbar-track,
+.partner-center-content-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.project-center-content-wrapper::-webkit-scrollbar-thumb,
+.partner-center-content-wrapper::-webkit-scrollbar-thumb {
+    background-color: #BF935B;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
 
 /* Firefox */
 @-moz-document url-prefix() {

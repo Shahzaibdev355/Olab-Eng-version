@@ -7,11 +7,19 @@
 .sidebar-div {
     /* border: 2px solid red; */
     width: 4.5%;
+
+
     height: 100vh;
+    /* height: 87vh; */
+
+
+
     background-color: white;
-    /* background-color: aqua; */
     position: fixed;
-    z-index: 1000;
+    z-index: 1200;
+
+    /* align-self: center;
+    margin: auto; */
 
 
     /* max-width: 400px; */
