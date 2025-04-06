@@ -2071,7 +2071,16 @@ body {
     font-family: "helloParisBold", sans-serif !important;
     margin-top: 95px;
     letter-spacing: 5px;
+
+    
 }
+
+.about-row8 h1 span{
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+
 
 
 
@@ -2208,6 +2217,11 @@ body {
     left: 52%;
 
 
+}
+
+.about-sec2-row1 h1 span {
+    margin-left: -10px;
+    margin-right: 10px;
 }
 
 
@@ -2870,6 +2884,7 @@ body {
     justify-content: space-evenly;
     margin-top: -4pc;
     align-items: center;
+    width: 90%;
 }
 
 .concept-product1-column1,
