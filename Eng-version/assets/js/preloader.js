@@ -170,22 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
       preloaderTimeline
-      .fromTo(
-        ".preloader-olab-logo-couple",
-        {
-          opacity: 0,
-          x: "-70%",
-          rotationY: -180,
-          transform: "translate(-50%, -50%)",
-        },
-        {
-          opacity: 1,
-          x: "0%",
-          rotationY: 0,
-          duration: 2.5,
-          ease: "power2.out",
-        }
-      )
+      
       .to([".preloader-cartImg1", ".preloader-cartImg2"], {
         duration: 1.5,
         x: 0,
@@ -207,6 +192,26 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 1,
         ease: "power2.out",
       })
+
+
+      .fromTo(
+        ".preloader-olab-logo-couple",
+        {
+          opacity: 0,
+          x: "-70%",
+          rotationY: -180,
+          transform: "translate(-50%, -50%)",
+        },
+        {
+          opacity: 1,
+          x: "0%",
+          rotationY: 0,
+          duration: 2.5,
+          ease: "power2.out",
+        }
+      )
+
+
       .to(".preloader-bg", {
         y: "-100%", // Slide the preloader upwards
         opacity: 0, // Fade out while sliding
@@ -294,6 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
           rotationY: 0, // Complete the flip to face forward
           duration: 4, // Animation duration
           ease: "power2.out", // Smooth easing
+          
           onComplete: () => {
             // Ensure the element stays centered
             const element = document.querySelector("#rotatingLogo");

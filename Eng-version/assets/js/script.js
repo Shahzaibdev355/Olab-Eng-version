@@ -171,6 +171,8 @@ const testingLInk = document.querySelector("#dropdown-link-row");
 
 const testClicking = document.querySelector("#testClick");
 
+const languageSelector = document.querySelector("#languageBtn");
+
 dashboard2SideBarClose.style.display = "none";
 
 let dashboard2Hidden = true;
@@ -206,10 +208,7 @@ function updateSidebarWidth(open) {
       mobileNavbarWidth.style.width = "100%";
 
 
-      // After width becomes 0%, reset it to 100% after a delay
-      setTimeout(() => {
-        mobileNavbarWidth.style.width = "100%";
-      }, 3000); // Adjust delay as needed (in milliseconds)
+      
 
 
     }
@@ -229,6 +228,24 @@ function expandSidebar() {
 
   dashboard2SideBarClose.style.display = "flex";
   dashboard2SideBarOpen.style.display = "none";
+
+
+  // Show the language selector button with fade-in effect
+  // setTimeout(() => {
+  //   languageSelector.classList.add('show');
+  //   languageSelector.classList.remove('hide'); // Remove 'hide' class if it was previously added
+  // }, 500); // Adjust delay as needed
+
+  // languageSelector.style.display = "flex";
+
+  // setTimeout(() => {
+  //   languageSelector.style.display = "flex";
+  //   // languageSelector.classList.remove("language-change-btn2"); // reset
+  //   // void languageSelector.offsetWidth; // force reflow
+  //   languageSelector.classList.add("language-change-btn2");
+  // },800)
+
+  
 }
 
 // Function to collapse the sidebar with delay
@@ -243,7 +260,15 @@ function collapseSidebar() {
 
     dashboard2SideBarClose.style.display = "none";
     dashboard2SideBarOpen.style.display = "block";
+
+
+
+     // Remove 'show' class if it was previously added
+
   }, 300); // Adjust delay as needed
+
+  languageSelector.style.display = "none";
+    // languageSelector.classList.remove('show');
 }
 
 // Add event listeners for hover behavior
@@ -254,6 +279,10 @@ if (window.innerWidth > 1080) {
     dashboard2Column1.addEventListener("mouseleave", collapseSidebar);
   });
 }
+
+
+
+let toggleLanguageBtnTimeout;
 
 // Click event listener for toggle button
 dashboard2Togglebtn.addEventListener("click", () => {
@@ -266,6 +295,15 @@ dashboard2Togglebtn.addEventListener("click", () => {
     dashboard2Text.forEach((text) => {
       text.classList.remove("expanded-sidebar-link");
     });
+
+
+    // Clear timeout in case it's still pending
+    clearTimeout(toggleLanguageBtnTimeout);
+
+     // Hide with fade-out
+     languageSelector.classList.remove("language-change-btn2");
+     languageSelector.style.display = "none";
+
   } else {
     dashboard2SideBarClose.style.display = "flex";
     dashboard2SideBarOpen.style.display = "none";
@@ -274,6 +312,17 @@ dashboard2Togglebtn.addEventListener("click", () => {
     dashboard2Text.forEach((text) => {
       text.classList.add("expanded-sidebar-link");
     });
+
+
+    clearTimeout(toggleLanguageBtnTimeout);
+
+    toggleLanguageBtnTimeout = setTimeout(() => {
+      languageSelector.style.display = "flex";
+      // force reflow to trigger animation even on first click
+      void languageSelector.offsetWidth;
+      languageSelector.classList.add("language-change-btn2");
+    }, 900); // delay before showing + animating
+
   }
 });
 
@@ -310,6 +359,10 @@ const Clicking = () => {
       dashboard2Text.forEach((text) => {
         text.classList.remove("expanded-sidebar-link");
       });
+
+
+      // Hide language selector button when sidebar is closed
+      $(languageSelector).fadeOut();
 
       console.log("Sidebar closed through click");
     }
@@ -385,3 +438,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+let showLanguageBtnTimeout;
+
+dashboard2Column1.addEventListener("mouseenter", () => {
+  showLanguageBtnTimeout = setTimeout(() => {
+    languageSelector.style.display = "flex";
+    languageSelector.classList.add("language-change-btn2");
+  }, 900);
+});
+
+dashboard2Column1.addEventListener("mouseleave", () => {
+  clearTimeout(showLanguageBtnTimeout); // Cancel showing if mouse leaves early
+  languageSelector.classList.remove("language-change-btn2");
+  languageSelector.style.display = "none";
+});

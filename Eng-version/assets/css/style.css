@@ -2941,6 +2941,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: -4pc;
+    width: 90%;
     align-items: center;
 }
 
@@ -3025,6 +3026,12 @@ body {
 }
 
 
+.ventes-main-column1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
 .ventes-column1,
 .ventes-column2,
 .ventes-column3 {
@@ -3032,6 +3039,7 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
 
 .ventes-column2 {
     margin-top: -20px;
@@ -3061,6 +3069,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 50px;
+    width: 60%;
 }
 
 .ventes-column4,
@@ -4623,7 +4632,10 @@ body {
     /* Initial rotation */
     opacity: 0;
     /* Start fully transparent */
+    will-change: transform, opacity; /* Hint browsers to optimize animation */
 }
+
+
 
 
 
@@ -4633,18 +4645,31 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 15px 6.6pc 15px 15px;
-    display: flex;
-    z-index: 1000;
+    /* margin: 15px 6.6pc 15px 15px; */
+    margin: 15px 3pc 0px 15px;
+display: none;
+    z-index: 1;
 
-    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); */
-
-    /* border-radius: 10px; */
+    /* width: max-content; */
 
     border: 1px solid black;
 }
+
+.language-change-btn2 {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 .language-change-btn a {
     padding: 0px 10px;
