@@ -49,7 +49,7 @@
 
     <!-- animate__animated animate__slideInLeft animate__delay-1s -->
 
-    <div class="preloader-bg" id="preloader">
+    <!-- <div class="preloader-bg" id="preloader">
 
         <div class="preloader-row2">
             <img src="/Eng-version/assets/images/preloader/PARIS Kiosk.003.png" alt="" class="preloader-paris">
@@ -66,7 +66,7 @@
 
 
 
-    </div>
+    </div> -->
 
 
     <div class="main-wrapper">
@@ -75,15 +75,15 @@
         <img src="/Eng-version/assets/images/Frames website 157 .001 (1)-new.png" alt="" class="left-sec-row2-new-pillar1"
         style="" >
 
-        <aside class="sidebar-div" id="mainpage-column1" style=" margin-left: 2pc; border: " >
+        <aside class="sidebar-div" id="mainpage-column1" style="" >
 
 
 
-            <div style="display: flex; height: 100vh; align-self: center; flex-direction: column; justify-content: center;">
+            <div class="sidenavbar-middle">
 
                
 
-                    <div class="language-change-btn" id="languageBtn" >
+                    <div class="language-change-btn" id="languageBtn"   >
                         <a href="/index.html" class="language-change-btn-link1">FR</a>
                         <a href="/Eng-version/index.html" class="language-change-btn-link2 active-tab">EN</a>
                     </div>
@@ -92,7 +92,7 @@
                 
 
 
-            <div class="menu-toggle-btn mr-15 dashboard2-menu-toggle-btn" style="border: ;">
+            <div class="menu-toggle-btn mr-15 dashboard2-menu-toggle-btn" >
 
 
 
@@ -104,7 +104,7 @@
                         <p>Close</p>
                     </div>
 
-                    <i id="dashboard2-sidebar-open" class="lni lni-menu nav-open-icon"></i>
+                    <i id="dashboard2-sidebar-open" class="lni lni-menu nav-open-icon" ></i>
 
                 </button>
             </div>
@@ -356,7 +356,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <script src="/Eng-version/assets/js/preloader.js"></script>
+    <!-- <script src="/Eng-version/assets/js/preloader.js"></script> -->
 
 
     <script>
@@ -376,9 +376,14 @@
 
 
 
-   <!-- <script src="/Eng-version/assets/js/preloader.js"></script> -->
+   <script src="/Eng-version/assets/js/preloader.js"></script>
 
-    <script src="/node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -390,8 +395,8 @@
                 alwaysShowTracks: true
             };
 
-            Scrollbar.init(document.querySelector('#my-scrollbar'), options);
 
+            Scrollbar.init(document.querySelector('#my-scrollbar'), options);
 
             // Initially hide the dropdown content
             var dropdownContent = document.querySelector('.dropdown-content');
