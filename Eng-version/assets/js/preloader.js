@@ -4,7 +4,7 @@
 
 //   const preloaderTimeline = gsap.timeline();
 
-//   // if (!Cookies.get("preloaderShown-eng")) {
+//   if (!Cookies.get("preloaderShown-eng")) {
 
   
 //     // Preloader animations
@@ -141,12 +141,12 @@
 //         }
 //       );
 
-//     // Cookies.set("preloaderShown-eng", "true");
+//     Cookies.set("preloaderShown-eng", "true");
 
 
-//   // } else {
-//   //   document.querySelector("#preloader").remove(); // Corrected DOM manipulation
-//   // }
+//   } else {
+//     document.querySelector("#preloader").remove(); // Corrected DOM manipulation
+//   }
 // });
 
 
@@ -167,6 +167,8 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const preloaderTimeline = gsap.timeline();
+
+  if (!Cookies.get("preloaderShown-eng")) {
 
 
       preloaderTimeline
@@ -307,6 +309,17 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         }
       );
+
+
+
+
+
+      Cookies.set("preloaderShown-eng", "true");
+
+
+    } else {
+      document.querySelector("#preloader").remove(); // Corrected DOM manipulation
+    }
 
     
 });
