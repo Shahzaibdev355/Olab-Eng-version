@@ -577,8 +577,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="/Eng-version/assets/js/script.js"></script>
-    <script src="/Eng-version/assets/js/brand-slider.js"></script>
-    <script src="/Eng-version/assets/js/cursor.js"></script>
+
+    <!-- <script src="/Eng-version/assets/js/brand-slider.js"></script> -->
+    <!-- <script src="/Eng-version/assets/js/cursor.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script>
 
@@ -660,15 +661,23 @@
         const slides = Array.from(slider.querySelectorAll('li:not([class*="product-img-pc-slide"])'));
         const arrowLeft = document.querySelector('.arrow-left');
         const arrowRight = document.querySelector('.arrow-right');
+
+        // console.log(arrowRight);
+        
+
         let currentIndex = 0;
 
         // Arrow click events
         arrowLeft.addEventListener('click', () => {
             currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
             scrollToCenter(currentIndex);
+            // console.log("arrow-left");
+            
         });
 
         arrowRight.addEventListener('click', () => {
+            console.log(arrowRight);
+            
             currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
             scrollToCenter(currentIndex);
         });
